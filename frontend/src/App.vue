@@ -59,6 +59,10 @@ export default {
     color: #fff;
 }
 
+.nav-link:hover, .nav-link:active{
+  color: black;
+}
+
 .btn-outline-primary{
   color: white;
 }
