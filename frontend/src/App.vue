@@ -20,24 +20,45 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
             </a>
-            <button class="btn btn-outline-primary me-2" type="button">Login</button>
+            <button class="btn btn-outline-primary me-2" type="button" @click="showModal">Login</button>
           </div>
         <!-- </div> -->
       </div>
     </nav>
+
+    <!-- LoginModals -->
+    <LoginModals v-show="isModalVisible" @close="closeModal"/>
   </div>
 </template>
 
 <script>
+import LoginModals from './components/LoginModals.vue'
 export default {
   name: 'App',
   components: {
-    
-  }
+    LoginModals
+  },
+  data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
 }
 </script>
 
 <style>
+.nav-link{
+    color: #fff;
+}
+
 .btn-outline-primary{
   color: white;
 }
