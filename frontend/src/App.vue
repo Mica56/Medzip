@@ -15,16 +15,26 @@
           <div class="nav justify-content-center">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Contact Us</a>
-            <a class="nav-link disabled">Disabled</a>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-            </a>
+            <a class="nav-link" href="#">Partners</a>
+            <a class="nav-link" href="#">Other providers</a>
+            <a class="nav-link" href="#">Patients</a>
+            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account Name //shows when user login
+            </a> -->
             <button class="btn btn-outline-primary me-2" type="button" @click="showModal">Login</button>
           </div>
         <!-- </div> -->
       </div>
     </nav>
+
+    <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">We provide easy solutions to your Healthcare needs</div>
+                <div class="masthead-subheading">Medzip is a platform for patients, healthcare providers, and health care companies to utilize the safety and security of blockchain database</div><br>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#">GET STARTED</a>
+            </div>
+        </header>
 
     <!-- LoginModals -->
     <LoginModals v-show="isModalVisible" @close="closeModal"/>

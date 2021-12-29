@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!-- <transition name="modal-fade"> -->
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
@@ -13,8 +12,6 @@
 
               <div class="modal-body" id="modalDescription">
                 <slot name="body">
-                  <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
-                  <button class="btn btn-default btn-outlined" type="button" @click="showModal">Patient</button> -->
                   <form>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -45,30 +42,21 @@
             </div>
           </div>
         </div>
-      <!-- </transition> -->
-      <!-- LoginModals -->
-      <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> -->
+        
     </div>
 </template>
 
 <script>
-// import LoginForm from './LoginForm.vue'
 export default {
-  name: 'LoginModals',
+    name: 'LoginForm',
   components: {
-    // LoginForm,
+    
   },
   methods: {
       close() {
         this.$emit('close');
       },
-    // showModal() {
-    //     this.isModalVisible = true;
-    //   },
-    //   closeModal() {
-    //     this.isModalVisible = false;
-    //   }
-  },
+    },
 }
 </script>
 
@@ -140,38 +128,5 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.label {
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 4px 8px;
-  border-radius: 2px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #FFF
-}
-
-.label.label-pill,
-.label.label-rounded {
-  border-radius: 99999px
-}
-
-.label.label-square {
-  border-radius: 0
-}
-
-.label.label-outlined {
-  border-width: 1px;
-  border-style: solid;
-  background-color: transparent
-}
-
-.label.label-outlined.label-default {
-  border-color: #323a45;
-  color: #323a45
 }
 </style>
