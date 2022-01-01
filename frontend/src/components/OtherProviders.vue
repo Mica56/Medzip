@@ -1,5 +1,7 @@
 <template>
-    
+    <div>
+    <!-- Available only to providers -->
+  </div>
 </template>
 
 <script>

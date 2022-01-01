@@ -1,29 +1,29 @@
 <template>
   <div>
     <!-- Navigation-->
-    <nav class="navbar navbar-dark" style="background-color: #6f42c1;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
       <!-- Navbar content -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="#" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <!-- class="d-inline-block align-text-top" -->
+          <img src="../src/assets/MED.png" alt="logo" width="40" height="50" > 
             Medzip
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
-          <div class="nav justify-content-center">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Partners</a>
-            <a class="nav-link" href="#">Other providers</a>
-            <a class="nav-link" href="#">Patients</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#partners">Partners</a>
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
             <button class="btn btn-outline-primary me-2" type="button" @click="showModal">Login</button>
-          </div>
-        <!-- </div> -->
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -38,15 +38,24 @@
 
     <!-- LoginModals -->
     <LoginModals v-show="isModalVisible" @close="closeModal"/>
+    <!-- About Us -->
+    <AboutUs></AboutUs>
+    <!-- Partners -->
+    <Partners></Partners>
   </div>
 </template>
 
 <script>
 import LoginModals from './components/LoginModals.vue'
+import AboutUs from './components/AboutUs.vue'
+import Partners from './components/Partners.vue'
+
 export default {
   name: 'App',
   components: {
-    LoginModals
+    LoginModals,
+    AboutUs,
+    Partners
   },
   data() {
       return {
@@ -65,15 +74,5 @@ export default {
 </script>
 
 <style>
-.nav-link{
-    color: #fff;
-}
 
-.nav-link:hover, .nav-link:active{
-  color: black;
-}
-
-.btn-outline-primary{
-  color: white;
-}
 </style>
