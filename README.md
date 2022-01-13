@@ -5,11 +5,11 @@ Progress Report:</br>
 - [x] Initial setup w/ navbar  
 
 Frameworks implemented:</br>
-- VueJs & Bootstrap for the frontend
+- [VueJs](https://vuejs.org/) & [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) for the frontend
 
 ## Note:
 To run/edit the program on your machine you need to install</br>
-- VSCode or any code editor that is Javascript compatible
+- [VSCode](https://code.visualstudio.com/) or any code editor that is Javascript compatible
 - [npm](https://nodejs.org/en/)
 
 Next, on your terminal do the following:</br>
@@ -69,7 +69,7 @@ Link: https://www.atlassian.com/git/tutorials/install-git
 
 Find a suitable area to put the files and type the command. 
 ```
-  - https://github.com/Mica56/Medzip
+  - git clone https://github.com/Mica56/Medzip
 ```
 # Add changes on the folder Medzip on your local machine.
 
