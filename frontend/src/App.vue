@@ -46,9 +46,9 @@
 </template>
 
 <script>
-import LoginModals from './components/LoginModals.vue'
-import AboutUs from './components/AboutUs.vue'
-import Partners from './components/Partners.vue'
+import LoginModals from './components/Nonuserspecific/LoginModals.vue'
+import AboutUs from './components/Nonuserspecific/AboutUs.vue'
+import Partners from './components/Nonuserspecific/Partnercompany.vue'
 
 export default {
   name: 'App',
