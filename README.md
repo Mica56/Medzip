@@ -24,6 +24,7 @@ Next, on your terminal do the following:</br>
 To run the code, on your terminal you type and enter:</br>
 ```
  cd frontend
+ yarn install
  yarn serve
 ```
 > Then, click either 'Local' or 'Network' running link.
