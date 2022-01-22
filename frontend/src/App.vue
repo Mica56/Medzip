@@ -6,8 +6,7 @@
       <div class="container">
         <a class="navbar-brand" href="#page-top">
           <!-- class="d-inline-block align-text-top" -->
-          <img src="../src/assets/MED.png" alt="logo" width="40" height="50" > 
-            Medzip
+          <img src="../src/assets/MEDZIP.png" alt="logo" width="120" height="70" > 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -17,7 +16,8 @@
           <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
             <a class="nav-link" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#about">About Us</a>
-            <a class="nav-link" href="#partners">Partners</a>
+            <a class="nav-link" href="#partners">Partner Company</a>
+            <a class="nav-link" href="provider">Providers</a>
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
