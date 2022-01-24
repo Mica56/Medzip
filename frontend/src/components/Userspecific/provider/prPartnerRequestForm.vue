@@ -24,7 +24,7 @@
     </div>
     </div>
             <div class="mb-3">
-                  <label for="inputEmail3" class="form-label">Reason for consultation</label>
+                  <label for="inputEmail3" class="form-label">Reason for Referral</label>
                 <input type="consultation" class="form-control" id="exampleInputconsultation1"  required>
                <div class="invalid-feedback">
       Please provide a valid reason.
@@ -43,13 +43,13 @@
       <div class="form-check">
         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
         <label class="form-check-label" for="gridRadios1">
-          First Session
+          Sole Session
         </label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
         <label class="form-check-label" for="gridRadios2">
-          Returning 
+          Team Session 
         </label>
       </div>
     </div>
@@ -58,11 +58,15 @@
     <label for="Requestavailable" class="form-label">Request</label>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">1</label>
+  <label class="form-check-label" for="inlineCheckbox1">Medical Certificate</label>
 </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">2</label>
+  <label class="form-check-label" for="inlineCheckbox2">Prescription</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox2">Others</label>
 </div>
                  <div class="col-12">
     <div class="form-check">

@@ -58,11 +58,15 @@
     <label for="Requestavailable" class="form-label">Request</label>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">1</label>
+  <label class="form-check-label" for="inlineCheckbox1">Medical Certificate</label>
 </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">2</label>
+  <label class="form-check-label" for="inlineCheckbox2">Prescription</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox2">Others</label>
 </div>
                  <div class="col-12">
     <div class="form-check">
