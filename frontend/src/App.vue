@@ -6,8 +6,7 @@
       <div class="container">
         <a class="navbar-brand" href="#page-top">
           <!-- class="d-inline-block align-text-top" -->
-          <img src="../src/assets/MED.png" alt="logo" width="40" height="50" > 
-            Medzip
+          <img src="../src/assets/MEDZIP.png" alt="logo" width="120" height="70" > 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -15,9 +14,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#partners">Partner Company</a>
+            <a class="nav-link" href="provider">Providers</a>
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
@@ -46,9 +46,9 @@
 </template>
 
 <script>
-import LoginModals from './components/LoginModals.vue'
-import AboutUs from './components/AboutUs.vue'
-import Partners from './components/Partners.vue'
+import LoginModals from './components/Nonuserspecific/LoginModals.vue'
+import AboutUs from './components/Nonuserspecific/AboutUs.vue'
+import Partners from './components/Nonuserspecific/Partnercompany.vue'
 
 export default {
   name: 'App',
