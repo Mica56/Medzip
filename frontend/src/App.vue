@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Navigation-->
+   <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
       <!-- Navbar content -->
       <div class="container">
@@ -14,10 +14,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#about">About Us</a>
-            <a class="nav-link" href="#partners">Partner Company</a>
-            <a class="nav-link" href="provider">Providers</a>
+            <a class="nav-link" aria-current="page"><router-link to="/">Home</router-link></a>
+            <a class="nav-link"><router-link to="/about">About</router-link></a>
+            <a class="nav-link"><router-link to="/partners">Partner Company</router-link></a>
+            <a class="nav-link"><router-link to="/providers">Providers</router-link></a>
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
@@ -27,35 +27,19 @@
       </div>
     </nav>
 
-    <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-heading text-uppercase">We provide easy solutions to your Healthcare needs</div>
-                <div class="masthead-subheading">Medzip is a platform for patients, healthcare providers, and health care companies to utilize the safety and security of blockchain database</div><br>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#">GET STARTED</a>
-            </div>
-        </header>
-
-    <!-- LoginModals -->
+     <!-- LoginModals -->
     <LoginModals v-show="isModalVisible" @close="closeModal"/>
-    <!-- About Us -->
-    <AboutUs></AboutUs>
-    <!-- Partners -->
-    <Partners></Partners>
+   <router-view/>
   </div>
 </template>
 
 <script>
 import LoginModals from './components/Nonuserspecific/LoginModals.vue'
-import AboutUs from './components/Nonuserspecific/AboutUs.vue'
-import Partners from './components/Nonuserspecific/Partnercompany.vue'
 
 export default {
   name: 'App',
   components: {
     LoginModals,
-    AboutUs,
-    Partners
   },
   data() {
       return {
