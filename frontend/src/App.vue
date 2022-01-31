@@ -15,9 +15,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#about">About Us</a>
-            <a class="nav-link" href="#partners">Partners</a>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
