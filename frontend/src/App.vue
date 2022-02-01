@@ -1,12 +1,12 @@
 <template>
   <div>
    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #EBFFF7;">
       <!-- Navbar content -->
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#page-top">
           <!-- class="d-inline-block align-text-top" -->
-          <img src="../src/assets/MEDZIP.png" alt="logo" width="120" height="70" > 
+          <img src="../src/assets/MEDZIP.png" alt="logo" width="150" height="100" > 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -58,5 +58,13 @@ export default {
 </script>
 
 <style>
+.nav-link {
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
 
+color: #000000;
+}
 </style>

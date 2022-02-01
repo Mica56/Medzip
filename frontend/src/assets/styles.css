@@ -674,14 +674,14 @@
 
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 11rem;
   text-align: left;
   color: #fff;
   background-image: url("./15.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: 3000px 1000px;
 }
 
 .btn-outline-primary{
