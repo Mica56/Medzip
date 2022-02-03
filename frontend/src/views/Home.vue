@@ -18,18 +18,19 @@
           </div>
       </div>
     </section>
-
+    <AboutUs></AboutUs>
   </div>
 </template>
 
 <script>
+import AboutUs from "./AboutUs.vue"
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-
+    AboutUs,
   }
 }
 </script>
