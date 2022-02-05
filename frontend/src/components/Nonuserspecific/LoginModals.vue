@@ -1,16 +1,14 @@
 <template>
+
     <div>
         <!-- <transition name="modal-fade"> -->
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
 
-              <div class="modal-header" id="modalTitle">
-                <slot name="header">
-                  Login
-                </slot>
-              </div>
-
+       <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      </div>
               <div class="modal-body" id="modalDescription">
                 <slot name="body">
                   <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
@@ -19,38 +17,59 @@
                   <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
                   <!-- <LoginForm></LoginForm> -->
                   <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                      <div class="LoginUserType" align-content="center">
+<img src="../Nonuserspecific/UserType/1.png" data-bs-target="#login"  height="250" width="250">
+<a href="companylogin"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> </a>
+<a href="emaillogin"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"> </a>
+    </div>
                   </form>
                 </slot>
-              </div>
 
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
-                    OK
-                  </button>
-                </slot>
-              </div>
+                  </div>
+
             </div>
           </div>
         </div>
       <!-- </transition> -->
       
     </div>
+        <div>
+        <!-- <transition name="modal-fade"> -->
+ <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-container">
+
+       <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      </div>
+              <div class="modal-body" id="modalDescription">
+                <slot name="body">
+                  <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+                          <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+                </slot>
+    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
 </template>
 
 <script>

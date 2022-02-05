@@ -1,25 +1,17 @@
 <template>
-    <div class="membersignupform">
-        <form class="row g-3 needs-validation" novalidate>
-    <div class="mb-3">
-                <input type="Unique Account Identification" class="form-control" id="exampleInputUAI1" placeholder="Unique Account Identification" required>
-               <div class="invalid-feedback">
-      Please provide a valid Unique Account Identification.
-    </div>
-     </div>
-             <div class="mb-3">
-                <input type="Password" class="form-control" id="examplePassword1" placeholder="Password" required>
-                <div class="invalid-feedback">
-      Please provide a valid Password.
-    </div>
-    </div>
+    <div class="SignUpUserType">
+        <form class="row g-3 needs-validation" >
+<router-link to="/SUPmodal"><img src="../Nonuserspecific/UserType/1.png"/></router-link>
+<router-link to="/SignupmodalsCompany"><img src="../Nonuserspecific/UserType/2.png"/></router-link>
+<router-link to="/SUMModals"><img src="../Nonuserspecific/UserType/3.png"/></router-link>
+
             </form>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'LogInUN',
+    name: 'SignUpUserType',
   components: {
     
   },
@@ -45,7 +37,7 @@ export default {
 }
 
 .modal-container {
-  width: 900px;
+  width: 600px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;

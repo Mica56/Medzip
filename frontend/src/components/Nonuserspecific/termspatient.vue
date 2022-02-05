@@ -1,12 +1,24 @@
 <template>
-    <div class="companysignupform">
+    <div>
+        <!-- <transition name="modal-fade"> -->
+        <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+              <div class="modal-header" id="modalTitle">
+                <slot name="header">
+                  Sign Up Healthcare
+                </slot>
+              </div>
+
+              <div class="modal-body" id="modalDescription">
+                <slot name="body">
+                  <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
+                  <button class="btn btn-default btn-outlined" type="button" @click="showModal">Patient</button> -->
+                  <!-- LoginForm -->
+                  <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
+                  <!-- <LoginForm></LoginForm> -->
         <form class="row g-3 needs-validation" novalidate>
-                       <div class="mb-3">
-                <input type="Company Name" class="form-control" id="exampleInputCompanyName1" placeholder="Company Name" required>
-               <div class="invalid-feedback">
-      Please provide a valid Company Name.
-    </div>
-     </div>
             <div class="mb-3">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -15,7 +27,7 @@
     </div>
     </div>
             <div class="mb-3">
-                <input type="Representative Name" class="form-control" id="exampleInputName1" placeholder="Representative Name" required>
+                <input type="Name" class="form-control" id="exampleInputName1" placeholder="Fullname" required>
                <div class="invalid-feedback">
       Please provide a valid name.
     </div>
@@ -26,31 +38,50 @@
       Please provide a valid Contact number.
     </div>
             </div>
+            <div class="mb-3">
+                <input type="Bday" class="form-control" id="exampleInputSex1" placeholder="Date of Birth" required>
+               <div class="invalid-feedback">
+      Please provide a valid Date of birth.
+    </div>
+            </div>
              <div class="mb-3">
-                <input type="Business Liscence Number" class="form-control" id="exampleInputBL1" placeholder="Business Liscence Number" required>
+                    <label for="Sex" class="form-label">Sex assigned from birth : </label>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">female</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Male</label>
+</div>
                 <div class="invalid-feedback">
-      Please provide a valid License Number.
+      Please provide a valid sex.
     </div>
     </div>
             <div class="mb-3">
-              <label for="formFile" class="form-label">Attach Business Liscence</label>
-              <input class="form-control" type="file" id="formFile" required>
-              </div>
-                          <div class="mb-3">
-              <label for="formFile1" class="form-label">Attach Business proposal </label>
-              <input class="form-control" type="file" id="formFile1" required>
-              </div>
-                          <div class="mb-3">
-              <label for="formFile2" class="form-label">Attach Smart Contract</label>
-              <input class="form-control" type="file" id="formFile2" required>
-              </div>
+                    <label for="Pronouns" class="form-label">Pronouns : </label>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">She/Her</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">He/Him</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
+  <label class="form-check-label" for="inlineCheckbox2">They/Them</label>
+</div>
+                <div class="invalid-feedback">
+      Please provide a valid pronoun/s.
+    </div>
+    </div>
              <div class="mb-3">
                 <input type="Password" class="form-control" id="exampleInputPpassword" placeholder="Password" required>
                 <div class="invalid-feedback">
       Please type a password.
     </div>
     </div>
-
                  <div class="col-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -66,20 +97,44 @@
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
         </form>
+                </slot>
+              </div>
+
+              <div class="modal-footer">
+                <slot name="footer">
+                  default footer
+                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
+                    OK
+                  </button>
+                </slot>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </transition> -->
+      
     </div>
 </template>
 
 <script>
+// import LoginForm from './LoginForm.vue';
+
 export default {
-    name: 'SignupmodalsCompany',
+  name: 'TCP',
   components: {
-    
+    // LoginForm
   },
   methods: {
-    //   close() {
-    //     this.$emit('close');
-    //   },
+    close() {
+      this.$emit('close');
     },
+    // showModal() {
+    //     this.isModalVisible = true;
+    // },
+    // closeModal() {
+    //   this.isModalVisible = false;
+    // }
+  },
 }
 </script>
 
@@ -102,7 +157,7 @@ export default {
 }
 
 .modal-container {
-  width: 900px;
+  width: 600px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;

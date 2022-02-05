@@ -135,7 +135,7 @@
 // import LoginForm from './LoginForm.vue';
 
 export default {
-  name: 'LoginModals',
+  name: 'SUPmodal',
   components: {
     // LoginForm
   },

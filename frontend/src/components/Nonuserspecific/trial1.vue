@@ -1,27 +1,45 @@
 <template>
-    <div class="membersignupform">
-        <form class="row g-3 needs-validation" novalidate>
-    <div class="mb-3">
-                <input type="Unique Account Identification" class="form-control" id="exampleInputUAI1" placeholder="Unique Account Identification" required>
-               <div class="invalid-feedback">
-      Please provide a valid Unique Account Identification.
+   <div>
+        <!-- <transition name="modal-fade"> -->
+        <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+       <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      </div>
+              <div class="modal-body" id="modalDescription">
+                <slot name="body">
+                  <form>
+
+        </form>
+                </slot>
     </div>
-     </div>
-             <div class="mb-3">
-                <input type="Password" class="form-control" id="examplePassword1" placeholder="Password" required>
-                <div class="invalid-feedback">
-      Please provide a valid Password.
-    </div>
-    </div>
-            </form>
-    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+  
 </template>
 
 <script>
+// import LoginForm from './LoginForm.vue';
+
 export default {
-    name: 'LogInUN',
+  name: 'LoginModals',
   components: {
-    
+    // LoginForm
+  },
+  methods: {
+    close() {
+      this.$emit('close');
+    },
+    // showModal() {
+    //     this.isModalVisible = true;
+    // },
+    // closeModal() {
+    //   this.isModalVisible = false;
+    // }
   },
 }
 </script>

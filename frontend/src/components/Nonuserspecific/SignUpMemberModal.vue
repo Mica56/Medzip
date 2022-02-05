@@ -120,7 +120,7 @@
 // import LoginForm from './LoginForm.vue';
 
 export default {
-  name: 'LoginModals',
+  name: 'SUMModals',
   components: {
     // LoginForm
   },

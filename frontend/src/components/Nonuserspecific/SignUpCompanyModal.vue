@@ -4,7 +4,8 @@
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
-
+<a href="/home" type="button" class="btn-close" aria-label="Close" >
+</a>
               <div class="modal-header" id="modalTitle">
                 <slot name="header">
                   Sign Up Healthcare
@@ -83,6 +84,9 @@
  <div class="col-12">
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
+                                               <div id="register-link" class="text-right">
+                                <a href="/LoginModals" class="text-info">Log In here</a>
+                            </div>
         </form>
                 </slot>
               </div>
@@ -90,7 +94,7 @@
               <div class="modal-footer">
                 <slot name="footer">
                   default footer
-                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
+                  <button class="modal-default-button"  aria-label="Close modal">
                     OK
                   </button>
                 </slot>
@@ -104,12 +108,12 @@
 </template>
 
 <script>
-// import LoginForm from './LoginForm.vue';
+// import SUcompmod from './LoginForm.vue';
 
 export default {
-  name: 'LoginModals',
+  name: 'SUcompmod',
   components: {
-    // LoginForm
+    // SUcompmod
   },
   methods: {
     close() {
@@ -144,7 +148,7 @@ export default {
 }
 
 .modal-container {
-  width: 600px;
+  width: 900px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;

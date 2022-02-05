@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div>
         <!-- <transition name="modal-fade"> -->
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
@@ -7,46 +7,34 @@
 
               <div class="modal-header" id="modalTitle">
                 <slot name="header">
-                  <h1>User Type Log In</h1>
+                  Log In Choose Account Type
                 </slot>
               </div>
-
-              <div class="modal-body" id="modalDescription">
+              <div class="modal-body" id="LIUserType">
                 <slot name="body">
                   <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
                   <button class="btn btn-default btn-outlined" type="button" @click="showModal">Patient</button> -->
                   <!-- LoginForm -->
                   <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
                   <!-- <LoginForm></LoginForm> -->
-                  <form class="row g-3 needs-validation" novalidate>
-           
-        </form>
-                </slot>
-              </div>
-
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
-                    OK
-                  </button>
-                </slot>
-              </div>
+    <div class="LoginUserType" align-content="center">
+<router-link to="/LoginFormDef"><img src="../Nonuserspecific/UserType/1.png"  height="250" width="250"></router-link>
+<router-link to="/LoginModals"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"></router-link>
+<router-link to="/LoginFormDef"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"></router-link>
+    </div>
+     </slot>
+                  </div>
             </div>
           </div>
         </div>
-      <!-- </transition> -->
-      
-    </div>
+        </div>
 </template>
 
 <script>
-// import LoginForm from './LoginForm.vue';
-
 export default {
-  name: 'LoginModals',
+    name: 'LIUserType',
   components: {
-    // LoginForm
+  // LIUserType
   },
   methods: {
     close() {
@@ -60,6 +48,7 @@ export default {
     // }
   },
 }
+
 </script>
 
 <style>
@@ -81,7 +70,7 @@ export default {
 }
 
 .modal-container {
-  width: 600px;
+  width: 900px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
