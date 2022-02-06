@@ -1,50 +1,42 @@
 
 <template>
     <div>
-        <!-- <transition name="modal-fade"> -->
+      <transition name="modal-fade">
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
-
               <div class="modal-header" id="modalTitle">
                 <slot name="header">
                   Company Login
                 </slot>
-     <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
-
+                <button class="btn-close" @click="$emit('close')" aria-label="Close modal"></button>
               </div>
 
-        <form>
-      <div class="loginform" id="seedlogin">
-        <form class="row g-3 needs-validation" novalidate>
-    <div class="mb-3">
-      <label for="exampleInputSP1" class="form-label">Seed Phrase</label>
-                <input type="Seed Phrase" class="form-control" id="exampleInputSP1" placeholder="Seed Phrase" required>
-               <div class="invalid-feedback">
-      Please provide a valid Seed Phrase.
-    </div>
-                <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-                          <div class="options text-center text-md-right mt-1">
-                                          <p> Wrong account type? <a href="LoginModals" class="blue-text">Choose account type</a></p>
-                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-          <p> Log In Using  <a href="LoginFormDef" class="blue-text">Email Account</a></p>
-
-                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-              </div>
-               <button type="submit" class="btn btn-primary">Submit</button>
-     </div>
-     
-            </form>
-    </div>
-
-        </form>
+              <form>
+                <div class="loginform" id="seedlogin">
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="mb-3">
+                      <label for="exampleInputSP1" class="form-label">Seed Phrase</label>
+                      <input type="Seed Phrase" class="form-control" id="exampleInputSP1" placeholder="Seed Phrase" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid Seed Phrase.
+                      </div>
+                      <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <div class="options text-center text-md-right mt-1">
+                        <p> Wrong account type? <a href="LoginModals" class="blue-text">Choose account type</a></p>
+                        <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                        <p> Log In Using  <a href="LoginFormDef" class="blue-text">Email Account</a></p>
+                        <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </form>
     
-
-
-
               <div class="modal-footer">
                 <slot name="footer">
                   default footer
@@ -56,7 +48,7 @@
             </div>
           </div>
         </div>
-      <!-- </transition> -->
+      </transition>
       
     </div>
 </template>
@@ -68,6 +60,17 @@ export default {
     name: 'LIFSeedP',
   components: {
     
+  },
+  methods: {
+    close() {
+      this.$emit('close');
+    },
+    // showModal() {
+    //     this.isModalVisible = true;
+    // },
+    // closeModal() {
+    //   this.isModalVisible = false;
+    // }
   },
 }
 </script>
@@ -174,4 +177,14 @@ export default {
   border-color: #323a45;
   color: #323a45
 }
+
+.modal-fade-enter,
+  .modal-fade-leave-to {
+    opacity: 0;
+  }
+
+  .modal-fade-enter-active,
+  .modal-fade-leave-active {
+    transition: opacity .5s ease;
+  }
 </style>

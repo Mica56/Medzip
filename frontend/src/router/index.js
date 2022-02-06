@@ -4,7 +4,10 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/Home.vue'),
+    // children: [
+      
+    // ]
   },
 
   {
@@ -15,35 +18,52 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutUs.vue')
   },
+
   {
     path: '/partners',
     name: 'Partners',
     component: () => import('../views/Partnercompany.vue')
-},  {
-  path: '/LogInCF',
-  name: 'LogInCF',
-  component: () => import('../components/Nonuserspecific/Logincompanyform.vue')
-}, {
-  path: '/LoginModals',
-  name: 'LoginModals',
-  component: () => import('../components/Nonuserspecific/LoginModals.vue')
-},  {
+  }, 
+
+  {
+    path: '/providers',
+    name: 'Providers',
+    component: () => import('../views/Providers.vue')
+  },
+  
+{
   path: '/LoginFormDef',
   name: 'LoginFormDef',
   component: () => import('../components/Nonuserspecific/LoginFormDefault.vue')
-},  {
+},
+{
+  path: '/LogInCF',
+  name: 'LogInCF',
+  component: () => import('../components/Nonuserspecific/Logincompanyform.vue')
+},
+{
+  path: '/LoginModals',
+  name: 'LoginModals',
+  component: () => import('../components/Nonuserspecific/LoginModals.vue'),
+}, 
+{
   path: '/LIFSeedP',
   name: 'LIFSeedP',
   component: () => import('../components/Nonuserspecific/LogInFormSeed.vue')
-}, {
+},
+{
   path: '/LogInUN',
   name: 'LogInUN',
   component: () => import('../components/Nonuserspecific/LoginUNform.vue')
-},  {
+},
+  
+
+{
   path: '/SignUpUserType',
   name: 'SignUpUserType',
   component: () => import('../components/Nonuserspecific/signup3.vue')
 },
+
 {
   path: '/SignupmodalsCompany',
   name: 'SignupmodalsCompany',
@@ -70,16 +90,12 @@ const routes = [
   name: 'TCPrac',
   component: () => import('../components/Nonuserspecific/TermsPrac.vue')
 }, 
-  {
-    path: '/providers',
-    name: 'Providers',
-    component: () => import('../views/Providers.vue')
-},
 {
   path: '/SUcompmod',
   name: 'SUcompmod',
   component: () => import('../components/Nonuserspecific/SignUpCompanyModal.vue')
 },
+
 ]
 
 const router = createRouter({

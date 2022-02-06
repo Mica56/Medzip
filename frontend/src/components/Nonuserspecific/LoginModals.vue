@@ -10,7 +10,7 @@
                 <slot name="header">
                   Login
                 </slot>
-                      <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
+                <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
               </div>
 
               <div class="modal-body" id="modalDescription">
@@ -21,11 +21,11 @@
                   <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
                   <!-- <LoginForm></LoginForm> -->
                   <form>
-                     <div class="LoginUserType" align-content="center">
-<a href="LoginFormDef"> <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250"> </a>
-<a href="LogInCF"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> </a>
-<a href="LoginFormDef"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"> </a>
-    </div>
+                    <div class="LoginUserType" align-content="center">
+                      <a href="LoginFormDef"> <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250"> </a>
+                      <a href="LogInCF"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> </a>
+                      <a href="LoginFormDef"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"> </a>
+                    </div>
                     <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
                   </form>
                 </slot>
@@ -93,6 +93,7 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 .modal-header,
 .modal-footer {

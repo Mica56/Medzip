@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#page-top">
           <!-- class="d-inline-block align-text-top" -->
-          <img src="../src/assets/MEDZIP.png" alt="logo" width="150" height="100" > 
+          <img src="./assets/MEDZIP.png" alt="logo" width="150" height="100" > 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu

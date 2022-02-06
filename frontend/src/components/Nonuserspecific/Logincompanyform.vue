@@ -90,6 +90,17 @@ export default {
   components: {
     
   },
+  methods: {
+    close() {
+      this.$emit('close');
+    },
+    // showModal() {
+    //     this.isModalVisible = true;
+    // },
+    // closeModal() {
+    //   this.isModalVisible = false;
+    // }
+  },
 }
 </script>
 
