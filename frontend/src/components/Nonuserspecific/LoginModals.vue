@@ -1,14 +1,18 @@
-<template>
 
+<template>
     <div>
         <!-- <transition name="modal-fade"> -->
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
 
-       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      </div>
+              <div class="modal-header" id="modalTitle">
+                <slot name="header">
+                  Login
+                </slot>
+                      <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
+              </div>
+
               <div class="modal-body" id="modalDescription">
                 <slot name="body">
                   <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
@@ -17,64 +21,34 @@
                   <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
                   <!-- <LoginForm></LoginForm> -->
                   <form>
-                      <div class="LoginUserType" align-content="center">
-<img src="../Nonuserspecific/UserType/1.png" data-bs-target="#login"  height="250" width="250">
-<a href="companylogin"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> </a>
-<a href="emaillogin"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"> </a>
+                     <div class="LoginUserType" align-content="center">
+<a href="LoginFormDef"> <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250"> </a>
+<a href="LogInCF"><img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> </a>
+<a href="LoginFormDef"><img src="../Nonuserspecific/UserType/3.png"  height="250" width="250"> </a>
     </div>
+                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
                   </form>
                 </slot>
+              </div>
 
-                  </div>
-
+              <div class="modal-footer">
+                <slot name="footer">
+                  default footer
+                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
+                    OK
+                  </button>
+                </slot>
+              </div>
             </div>
           </div>
         </div>
       <!-- </transition> -->
       
     </div>
-        <div>
-        <!-- <transition name="modal-fade"> -->
- <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-container">
-
-       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      </div>
-              <div class="modal-body" id="modalDescription">
-                <slot name="body">
-                  <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-                          <div class="options text-center text-md-right mt-1">
-                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-              </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-                </slot>
-    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
 </template>
 
 <script>
 // import LoginForm from './LoginForm.vue';
-
 export default {
   name: 'LoginModals',
   components: {
@@ -106,12 +80,10 @@ export default {
   display: table;
   transition: opacity 0.3s ease;
 }
-
 .modal-wrapper {
   display: table-cell;
   vertical-align: middle;
 }
-
 .modal-container {
   width: 900px;
   margin: 0px auto;
@@ -122,48 +94,39 @@ export default {
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
 }
-
 .modal-header,
 .modal-footer {
     padding: 15px;
     display: flex;
 }
-
 .modal-header h3 {
     position: relative;
     border-bottom: 1px solid #eeeeee;
     color: #4AAE9B;
     justify-content: space-between;
 }
-
 .modal-footer {
     border-top: 1px solid #eeeeee;
     flex-direction: column;
 }
-
 .modal-body {
     position: relative;
     padding: 20px 10px;
 }
-
 .modal-default-button {
   float: right;
 }
-
 .modal-enter {
   opacity: 0;
 }
-
 .modal-leave-active {
   opacity: 0;
 }
-
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 .label {
   display: inline-block;
   line-height: 1;
@@ -176,22 +139,18 @@ export default {
   font-weight: 400;
   color: #FFF
 }
-
 .label.label-pill,
 .label.label-rounded {
   border-radius: 99999px
 }
-
 .label.label-square {
   border-radius: 0
 }
-
 .label.label-outlined {
   border-width: 1px;
   border-style: solid;
   background-color: transparent
 }
-
 .label.label-outlined.label-default {
   border-color: #323a45;
   color: #323a45

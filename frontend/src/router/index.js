@@ -19,18 +19,14 @@ const routes = [
     path: '/partners',
     name: 'Partners',
     component: () => import('../views/Partnercompany.vue')
-},    {
-  path: '/LIUserType',
-  name: 'LIUserType',
-  component: () => import('../components/Nonuserspecific/login3.vue')
 },  {
-  path: '/LoginModals',
-  name: 'LoginModals',
-  component: () => import('../components/Nonuserspecific/Logincompanyform.vue')
-}, {
   path: '/LogInCF',
   name: 'LogInCF',
-  component: () => import('../components/Nonuserspecific/login3.vue')
+  component: () => import('../components/Nonuserspecific/Logincompanyform.vue')
+}, {
+  path: '/LoginModals',
+  name: 'LoginModals',
+  component: () => import('../components/Nonuserspecific/LoginModals.vue')
 },  {
   path: '/LoginFormDef',
   name: 'LoginFormDef',
