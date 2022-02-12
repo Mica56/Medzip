@@ -9,7 +9,7 @@
                 <slot name="header">
                   Company Login
                 </slot>
-                <button class="btn-close" @click="$emit('close')" aria-label="Close modal"></button>
+                <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
               </div>
 
               <form>
