@@ -56,12 +56,23 @@ const routes = [
   name: 'LogInUN',
   component: () => import('../components/Nonuserspecific/LoginUNform.vue')
 },
-  
+{
+  path: '/loginsignup',
+  name: 'loginsignup',
+  component: () => import('../components/Nonuserspecific/login.vue')
+},
+ 
 
 {
   path: '/SignUpUserType',
   name: 'SignUpUserType',
   component: () => import('../components/Nonuserspecific/signup3.vue')
+},
+
+{
+  path: '/chats',
+  name: 'chats',
+  component: () => import('../components/Userspecific/chat.vue')
 },
 
 {

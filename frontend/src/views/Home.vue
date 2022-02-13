@@ -9,15 +9,22 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#">GET STARTED</a>
             </div>
         </header>
-        
-    <section class="page-section">
-      <div class="container">
-          <div class="text-center">
-              <h2 class="section-heading text-uppercase">Home</h2>
-              <h3 class="section-subheading text-muted">This is Home Page.</h3>
-          </div>
-      </div>
-    </section>
+        <header class="masthead">
+                      <div class="container">
+ <div class="row g-0">
+    <div class="col-md">
+      <img src="../assets/about1.png" class="img-fluid rounded-start" alt="..." width="1500" height="1500" >
+    </div>
+    <div class="col-md">
+                <div class="masthead-heading text-uppercase fs-2">
+                  <p class="text-center">About MedZip</p>
+                  </div>
+                <div class="masthead-subheading fs-4">MedZip was founded with the goal of providing technical solutions that would have a positive impact on the healthcare industry. The creators came up with the name "MedZip" as a trademark for the platform, which combines the terms "Medical" and ".zip." We have the best data secured application databases for the of the patients which provides a user friendly software to easily track medical records. We assure safety access of the patient of merdical professionals for their medical references ensured to have data access provided with verification security blockchain.</div><br>
+            </div>
+                        </div>
+ </div>
+        </header>
+
     <AboutUs></AboutUs>
   </div>
 </template>
