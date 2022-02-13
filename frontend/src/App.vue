@@ -1,7 +1,7 @@
 <template>
   <div>
    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #EBFFF7;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #fff ;">
       <!-- Navbar content -->
       <div class="container-fluid">
         <a class="navbar-brand" href="#page-top">
@@ -30,16 +30,21 @@
      <!-- LoginModals -->
     <LoginModals v-show="isModalVisible" @close="closeModal"/>
    <router-view/>
+
+<Footer></Footer>
+
   </div>
 </template>
 
 <script>
 import LoginModals from './components/Nonuserspecific/LoginModals.vue'
+import Footer from './views/footer.vue'
 
 export default {
   name: 'App',
   components: {
     LoginModals,
+    Footer,
   },
   data() {
       return {
@@ -55,6 +60,7 @@ export default {
       }
     }
 }
+
 </script>
 
 <style>
