@@ -256,7 +256,7 @@
 
 <script>
 export default {
-    name: '',
+    name: 'settings',
   components: {
     
   },

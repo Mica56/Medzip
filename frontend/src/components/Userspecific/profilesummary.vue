@@ -9,25 +9,28 @@
                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
                     <div class="btn-bar">
-                        <a class="px-btn theme" href="#">View Works</a>
-                        <a class="px-btn theme-t" href="#">Download CV</a>
+                        <a class="px-btn theme" href="#">View Profile</a>
+                        <a class="px-btn theme-t" href="#">Request an appointment </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 text-center">
                 <div class="about-img">
                     <img src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                         <h3 class="dark-color">Dr. Juan Dela Cruz </h3>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+
 </template>
 
 <script>
 export default {
-    name: '',
+    name: 'profilesummary',
   components: {
     
   },
@@ -139,10 +142,10 @@ body{margin-top:20px;}
 .counter-section p {
   font-weight: 500;
   margin: 0;
-  color: #fe4f6c;
+  color:  rgba(123, 26, 200, 1)
 }
 .theme-color {
-    color: #fe4f6c;
+    color: rgba(123, 26, 200, 1)
 }
 
 .section {
@@ -153,9 +156,9 @@ body{margin-top:20px;}
     background-color: #ebf4fa;
 }
 .px-btn.theme {
-    background: #fe4f6c;
+    background: #7B1AC8;
     color: #ffffff;
-    border: 2px solid #fe4f6c;
+    border: 2px solid #7B1AC8;
 }
 .px-btn {
     padding: 0 20px;
@@ -176,8 +179,8 @@ body{margin-top:20px;}
 
 .px-btn.theme-t {
     background: transparent;
-    border: 2px solid #fe4f6c;
-    color: #fe4f6c;
+    border: 2px solid #7B1AC8;
+    color: #7B1AC8;
 }
 
 

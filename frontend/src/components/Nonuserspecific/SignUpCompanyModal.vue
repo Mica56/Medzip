@@ -4,7 +4,7 @@
         <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
           <div class="modal-wrapper">
             <div class="modal-container">
-<a href="/home" type="button" class="btn-close" aria-label="Close" >
+<a href="/" type="button" class="btn-close" aria-label="Close" >
 </a>
               <div class="modal-header" id="modalTitle">
                 <slot name="header">

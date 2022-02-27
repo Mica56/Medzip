@@ -13,47 +13,7 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="../assets/Practitioners/2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="../assets/Practitioners/3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-    <div class="col">
-    <div class="card">
-      <img src="../assets/Practitioners/4.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>  
-  <div class="col">
-    <div class="card">
-      <img src="../assets/Practitioners/5.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       <a href="#" class="btn btn-primary">Go somewhere</a>
+       <a href="doctors" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -63,10 +23,51 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="pharmacists" class="btn btn-primary ">Go somewhere</a>
       </div>
     </div>
   </div>
+  <div class="col">
+    <div class="card">
+      <img src="../assets/Practitioners/2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../assets/Practitioners/3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card">
+      <img src="../assets/Practitioners/4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+       <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+      </div>
+    </div>
+  </div>  
+  <div class="col">
+    <div class="card">
+      <img src="../assets/Practitioners/5.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+       <a href="#" class="btn btn-primary disabled">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  
 </div>
 
         </section>

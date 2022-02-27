@@ -10,7 +10,7 @@
                 <slot name="header">
                   Login
                 </slot>
-                <a href="home">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
+                <a href="">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
               </div>
 
               <div class="modal-body" id="modalDescription">

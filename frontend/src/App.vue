@@ -14,7 +14,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
-            <a class="nav-link" aria-current="page"><router-link style="text-decoration: none; color: inherit;" to="/home">Home</router-link></a>
+            <a class="nav-link" aria-current="page"><router-link style="text-decoration: none; color: inherit;" to="/">Home</router-link></a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>

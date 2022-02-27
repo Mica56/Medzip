@@ -2,7 +2,6 @@
     <div class="container">
     <div class="main-body">
     
-  
           <div class="row gutters-sm">
             <div class="col-md-4 mb-3">
               <div class="card">
@@ -13,7 +12,7 @@
                       <h4>John Doe</h4>
                       <p class="text-secondary mb-1">Full Stack Developer</p>
                       <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                      <button class="btn btn-outline-primary">Message</button>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inquire</button>
                     </div>
                   </div>
                 </div>
@@ -97,12 +96,14 @@
           </div>
         </div>
     </div>
+        <Pharmacistrequest></Pharmacistrequest>
 </template>
 
 <script>
+import Pharmacistrequest from './pharmacistrequest.vue'
 export default {
-    name: 'profile',
-  components: {
+    name: 'pharmacistprofile',
+  components: { Pharmacistrequest
     
   },
 }
