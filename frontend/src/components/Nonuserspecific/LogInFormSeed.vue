@@ -1,5 +1,5 @@
 <template>
-
+<div>
 <div class="modal fade" id="LIFSeedP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -45,7 +45,7 @@
 <Signup3> </Signup3>
 <LogInUN></LogInUN>
 <LoginModals></LoginModals>
-
+</div>
 </template>
 
 
