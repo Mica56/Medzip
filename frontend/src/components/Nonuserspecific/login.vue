@@ -6,12 +6,10 @@
           <div class="modal-wrapper">
             <div class="modal-container">
 
-              <div class="modal-header" id="modalTitle">
-                <slot name="header">
-                  Login
-                </slot>
-                <a href="">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
-              </div>
+     <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
               <div class="modal-body" id="modalDescription">
                 <slot name="body">

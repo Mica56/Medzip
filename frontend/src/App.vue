@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#page-top">
           <!-- class="d-inline-block align-text-top" -->
-          <img src="./assets/MEDZIP.png" alt="logo" width="150" height="100" > 
+          <img src="./assets/MEDZIP.png" alt="logo" width="150" height="200" > 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -21,30 +21,35 @@
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Account Name //shows when user login
             </a> -->
-            <button class="btn btn-outline-primary me-2" type="button" @click="showModal">Login</button>
+            <button class="btn btn-outline-primary me-2" type="button"  data-bs-toggle="modal" data-bs-target="#LoginModals" >Login</button>
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Signup3"> Sign Up</button>
+
           </ul>
         </div>
       </div>
     </nav>
 
      <!-- LoginModals -->
-    <LoginModals v-show="isModalVisible" @close="closeModal"/>
+    <LoginModals></LoginModals>
    <router-view/>
 
 <Footer></Footer>
-
+<Signup3></Signup3>
   </div>
 </template>
 
 <script>
+
 import LoginModals from './components/Nonuserspecific/LoginModals.vue'
+import Signup3 from './components/Nonuserspecific/signup3.vue'
 import Footer from './views/footer.vue'
 
 export default {
   name: 'App',
   components: {
     LoginModals,
-    Footer,
+    Footer, 
+    Signup3,
   },
   data() {
       return {

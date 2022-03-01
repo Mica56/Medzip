@@ -7,32 +7,20 @@
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-         
-              <form>
-                <div class="loginform" id="seedlogin">
-                  <form class="row g-3 needs-validation" novalidate>
-                    <div class="mb-3">
-                      <label for="exampleInputSP1" class="form-label">Seed Phrase</label>
-                      <input type="Seed Phrase" class="form-control" id="exampleInputSP1" placeholder="Seed Phrase" required>
-                      <div class="invalid-feedback">
-                        Please provide a valid Seed Phrase.
-                      </div>
-                      <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                <div class="options text-center text-md-right mt-1">
-                  <p> Wrong account type? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginModals" >Choose account type</button></p>
-                                <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginFormDef" >Email </button></p>
-                          <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LogInUN" >User Name </button></p>
-                    <p>Not a member? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Signup3" >Sign Up</button></p>
-                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
-                </div>
-              </form>
+             <form class="row g-3 needs-validation" novalidate>
+    <div class="mb-3">
+                <input type="Unique Account Identification" class="form-control" id="exampleInputUAI1" placeholder="Unique Account Identification" required>
+               <div class="invalid-feedback">
+      Please provide a valid Unique Account Identification.
+    </div>
+     </div>
+             <div class="mb-3">
+                <input type="Password" class="form-control" id="examplePassword1" placeholder="Password" required>
+                <div class="invalid-feedback">
+      Please provide a valid Password.
+    </div>
+    </div>
+            </form>
       <div class="modal-footer">
 <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">Submit</button>
@@ -42,40 +30,34 @@
   </div>
 </div>
 <LoginFormDef></LoginFormDef>
+<LogInCF></LogInCF>
+<LIFSeedP></LIFSeedP>
 <Signup3> </Signup3>
 <LogInUN></LogInUN>
 <LoginModals></LoginModals>
 
-</template>
-
-
-<script>
+import LoginModals from './LoginModals.vue'
 import LoginFormDef from './LoginFormDefault.vue'
+import LogInCF from './Logincompanyform.vue'
+import LIFSeedP from './LogInFormSeed.vue'
 import Signup3 from './signup3.vue'
 import LogInUN from './LoginUNform.vue'
-import LoginModals from './LoginModals.vue'
 
+LoginFormDef, LogInCF, LIFSeedP, Signup3, LogInUN, LoginModals,
+
+</template>
+
+<script>
 export default {
-    name: 'LIFSeedP',
+    name: 'Signup3',
   components: {
-    LoginFormDef, Signup3, LogInUN, LoginModals,
-
-  },
-  methods: {
-    close() {
-      this.$emit('close');
-    },
-    // showModal() {
-    //     this.isModalVisible = true;
-    // },
-    // closeModal() {
-    //   this.isModalVisible = false;
-    // }
+    
   },
 }
 </script>
 
 <style>
+
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -177,14 +159,4 @@ export default {
   border-color: #323a45;
   color: #323a45
 }
-
-.modal-fade-enter,
-  .modal-fade-leave-to {
-    opacity: 0;
-  }
-
-  .modal-fade-enter-active,
-  .modal-fade-leave-active {
-    transition: opacity .5s ease;
-  }
 </style>

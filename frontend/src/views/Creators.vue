@@ -8,7 +8,7 @@
             <!-- Section Heading-->
             <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
               <h3>Our Creative <span> Team</span></h3>
-              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+              <p>MedZip is developed and researched by the following to furter enhance health in this technological era.</p>
               <div class="line"></div>
             </div>
           </div>
@@ -18,14 +18,14 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
               <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+              <div class="advisor_thumb"><img src="../assets/PITSUR/4.png" alt="" width="300" height="300" >
                 <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                <div class="social-info"><a href="https://www.facebook.com/justine0325"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/jayemjm3"><i class="fa fa-twitter"></i></a><a href="https://github.com/Jayyyyemmmm"><i class="fa fa-gthub"></i></a></div>
               </div>
               <!-- Team Details-->
               <div class="single_advisor_details_info">
-                <h6>Samantha Sarah</h6>
-                <p class="designation">Founder &amp; CEO</p>
+                <h6>Justine T. Miralles</h6>
+                <p class="designation"> Frontend developer and Lead researcher</p>
               </div>
             </div>
           </div>
@@ -33,14 +33,14 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
               <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+              <div class="advisor_thumb"><img src="../assets/PITSUR/7.png" alt="" width="300" height="300" >
                 <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                <div class="social-info"><a href="https://www.facebook.com/miruko56/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/Mimiso00"><i class="fa fa-twitter"></i></a><a href="https://github.com/Mica56"><i class="fa fa-github"></i></a></div>
               </div>
               <!-- Team Details-->
               <div class="single_advisor_details_info">
-                <h6>Nazrul Islam</h6>
-                <p class="designation">UI Designer</p>
+                <h6>Micaela T. Cerilla</h6>
+                <p class="designation">Lead Developer </p>
               </div>
             </div>
           </div>
@@ -48,14 +48,74 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
               <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+              <div class="advisor_thumb"><img src="../assets/PITSUR/2.png" alt="" width="300" height="300" >
                 <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                <div class="social-info"><a href="https://m.facebook.com/ella.jeorella?ref=bookmarks"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/mikeeburayag/"><i class="fa fa-instagram"></i></a></div>
               </div>
               <!-- Team Details-->
               <div class="single_advisor_details_info">
-                <h6>Riyadh Khan</h6>
-                <p class="designation">Developer</p>
+                <h6>Mikee T. Burayag</h6>
+                <p class="designation">Document Controller and Researcher </p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="../assets/PITSUR/5.png" alt="" width="300" height="300" >
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.facebook.com/janiks.francisco"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/nicaaroxo"><i class="fa fa-twitter"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Jhannica C. Francisco</h6>
+                <p class="designation">Instrument writer and Researcher </p>
+              </div>
+            </div>
+          </div> 
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="../assets/PITSUR/6.png" alt="" width="300" height="300" >
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.facebook.com/rowenafaepascualbueno"><i class="fa fa-facebook"></i></a><a href="#https://twitter.com/rfaebueno"><i class="fa fa-twitter"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Rowena Fae P. Bueno</h6>
+                <p class="designation">Researcher</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="../assets/PITSUR/3.png" alt="" width="300" height="300" >
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://web.facebook.com/jamaicamari.bas"><i class="fa fa-facebook"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Jamaica Mari S. Bas</h6>
+                <p class="designation">Junior Researcher and HR assistance </p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="../assets/PITSUR/1.png" alt="" width="300" height="300" >
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.facebook.com/krys.soriano.03"><i class="fa fa-facebook"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Kryslher Mark N. Soriano</h6>
+                <p class="designation">Junior associate researcher </p>
               </div>
             </div>
           </div>
@@ -73,54 +133,9 @@
                 <p class="designation">Marketing Manager</p>
               </div>
             </div>
-          </div> 
-          <!-- Single Advisor-->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-              </div>
-              <!-- Team Details-->
-              <div class="single_advisor_details_info">
-                <h6>Samantha Sarah</h6>
-                <p class="designation">Founder &amp; CEO</p>
-              </div>
-            </div>
           </div>
-          <!-- Single Advisor-->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
-                <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-              </div>
-              <!-- Team Details-->
-              <div class="single_advisor_details_info">
-                <h6>Nazrul Islam</h6>
-                <p class="designation">UI Designer</p>
-              </div>
-            </div>
-          </div>
-          <!-- Single Advisor-->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <!-- Team Thumb-->
-              <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
-                <!-- Social Info-->
-                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-              </div>
-              <!-- Team Details-->
-              <div class="single_advisor_details_info">
-                <h6>Riyadh Khan</h6>
-                <p class="designation">Developer</p>
-              </div>
-            </div>
-          </div>
-          <!-- Single Advisor-->
-          <div class="col-12 col-sm-6 col-lg-3">
+                    <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3 " >
             <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
               <!-- Team Thumb-->
               <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
@@ -167,7 +182,7 @@ background:#eee;
     border-radius: 15px 15px 0 0;
     margin: 0 auto;
     padding: 30px 30px 0 30px;
-    background-color: #3f43fd;
+    background-color: #9ee2c6;
     overflow: hidden;
 }
 .single_advisor_profile .advisor_thumb::after {
@@ -204,7 +219,7 @@ background:#eee;
 }
 .single_advisor_profile .advisor_thumb .social-info a:hover,
 .single_advisor_profile .advisor_thumb .social-info a:focus {
-    color: #3f43fd;
+    color: #9ee2c6;
 }
 .single_advisor_profile .advisor_thumb .social-info a:last-child {
     padding-right: 0;

@@ -1,19 +1,40 @@
 <template>
-    <div class="SignUpUserType">
-        <form class="row g-3 needs-validation" >
-<router-link to="/SUPmodal"><img src="../Nonuserspecific/UserType/1.png"/></router-link>
-<router-link to="/SignupmodalsCompany"><img src="../Nonuserspecific/UserType/2.png"/></router-link>
-<router-link to="/SUMModals"><img src="../Nonuserspecific/UserType/3.png"/></router-link>
 
-            </form>
+<div class="modal fade" id="Signup3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+  <div class="LoginUserType" align-content="center">
+                      <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SUPmodal"> Inquire</button>
+                      <img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> 
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignupmodalsCompany"> Inquire</button>
+                      <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">
+                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SUMModals"> Inquire</button>
+
+                    </div>
+      </div>
     </div>
+  </div>
+</div>
+<SignupmodalsCompany></SignupmodalsCompany>
+<SUMModals></SUMModals>
+<SUPmodal></SUPmodal>
 </template>
 
 <script>
+import SignupmodalsCompany from './SignUpCompanyform.vue'
+import SUMModals from './SignUpMemberModal.vue'
+import SUPmodal from './Signupprovidersmodal.vue'
+
 export default {
-    name: 'SignUpUserType',
-  components: {
-    
+    name: 'Signup3',
+  components: { SignupmodalsCompany, SUMModals, SUPmodal,
   },
 }
 </script>
@@ -30,14 +51,12 @@ export default {
   display: table;
   transition: opacity 0.3s ease;
 }
-
 .modal-wrapper {
   display: table-cell;
   vertical-align: middle;
 }
-
 .modal-container {
-  width: 600px;
+  width: 900px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -45,49 +64,41 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
-
 .modal-header,
 .modal-footer {
     padding: 15px;
     display: flex;
 }
-
 .modal-header h3 {
     position: relative;
     border-bottom: 1px solid #eeeeee;
     color: #4AAE9B;
     justify-content: space-between;
 }
-
 .modal-footer {
     border-top: 1px solid #eeeeee;
     flex-direction: column;
 }
-
 .modal-body {
     position: relative;
     padding: 20px 10px;
 }
-
 .modal-default-button {
   float: right;
 }
-
 .modal-enter {
   opacity: 0;
 }
-
 .modal-leave-active {
   opacity: 0;
 }
-
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 .label {
   display: inline-block;
   line-height: 1;
@@ -100,22 +111,18 @@ export default {
   font-weight: 400;
   color: #FFF
 }
-
 .label.label-pill,
 .label.label-rounded {
   border-radius: 99999px
 }
-
 .label.label-square {
   border-radius: 0
 }
-
 .label.label-outlined {
   border-width: 1px;
   border-style: solid;
   background-color: transparent
 }
-
 .label.label-outlined.label-default {
   border-color: #323a45;
   color: #323a45

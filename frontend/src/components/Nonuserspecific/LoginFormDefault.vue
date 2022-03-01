@@ -1,18 +1,12 @@
-
 <template>
-  <div>
-    <!-- <transition name="modal-fade"> -->
-    <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-      <div class="modal-wrapper">
-        <div class="modal-container">
 
-          <div class="modal-header" id="modalTitle">
-            <slot name="header">
-              Company Login
-            </slot>
-            <a href="">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
-          </div>
-
+<div class="modal fade" id="Signup3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
           <form>
             <div class="loginform" id="emaillogin">
               <form class="row g-3 needs-validation" novalidate>
@@ -38,37 +32,40 @@
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
                 <div class="options text-center text-md-right mt-1">
-                  <p> Wrong account type? <a href="LoginModals" class="blue-text">Choose account type</a></p>
-                                <p> Log In Using  <a href="LIFSeedP" class="blue-text">Seedphrase</a></p>
-                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p> Wrong account type? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginModals" >Choose account type</button></p>
+                                <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LIFSeedP" >Seed Phrase</button></p>
+                          <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LogInUN" >User Name </button></p>
+                    <p>Not a member? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Signup3" >Sign Up</button></p>
                     <p>Forgot <a href="#" class="blue-text">Password?</a></p>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>          
           </form>
-  
-          <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
-                OK
-              </button>
-            </slot>
-          </div> 
-        </div>
+      <div class="modal-footer">
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  </div>
       </div>
     </div>
-    <!-- </transition> -->
-      
   </div>
+</div>
+<LIFSeedP></LIFSeedP>
+<Signup3> </Signup3>
+<LogInUN></LogInUN>
+<LoginModals></LoginModals>
+
 </template>
 
 
+
 <script>
+import LoginModals from './LoginModals.vue'
+import LIFSeedP from './LogInFormSeed.vue'
+import Signup3 from './signup3.vue'
+import LogInUN from './LoginUNform.vue'
 export default {
   name: 'LoginFormDef',
-  components: {
+  components: { LIFSeedP, Signup3, LogInUN, LoginModals,
     
   },
   

@@ -1,24 +1,13 @@
 <template>
-    <div>
-        <!-- <transition name="modal-fade"> -->
-        <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-          <div class="modal-wrapper">
-            <div class="modal-container">
 
-              <div class="modal-header" id="modalTitle">
-                <slot name="header">
-                  Sign Up Healthcare
-                </slot>
-              </div>
-
-              <div class="modal-body" id="modalDescription">
-                <slot name="body">
-                  <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
-                  <button class="btn btn-default btn-outlined" type="button" @click="showModal">Patient</button> -->
-                  <!-- LoginForm -->
-                  <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
-                  <!-- <LoginForm></LoginForm> -->
-                  <form class="row g-3 needs-validation" novalidate>
+<div class="modal fade" id="SUPmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+            <form class="row g-3 needs-validation" novalidate>
             <div class="mb-3">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -108,47 +97,27 @@
       </div>
     </div>
   </div>
- <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
         </form>
-                </slot>
-              </div>
-
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
-                    OK
-                  </button>
-                </slot>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- </transition> -->
-      
+   <div class="modal-footer">
+<div class="col-auto">
+     <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Signup3"> Return</button>
+    <button type="submit" class="btn btn-primary ">Submit</button>
+  </div>
+   </div>
     </div>
+      </div>
+  </div>
+<Signup3> </Signup3>
 </template>
 
 <script>
-// import LoginForm from './LoginForm.vue';
+import Signup3 from './signup3.vue'
+
 
 export default {
   name: 'SUPmodal',
-  components: {
-    // LoginForm
-  },
-  methods: {
-    close() {
-      this.$emit('close');
-    },
-    // showModal() {
-    //     this.isModalVisible = true;
-    // },
-    // closeModal() {
-    //   this.isModalVisible = false;
-    // }
+  components: { Signup3,
+    // LoginForm 
   },
 }
 </script>
@@ -172,7 +141,7 @@ export default {
 }
 
 .modal-container {
-  width: 600px;
+  width: 900px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;

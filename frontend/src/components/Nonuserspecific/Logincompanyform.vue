@@ -1,20 +1,14 @@
 
 <template>
-    <div>
-        <!-- <transition name="modal-fade"> -->
-        <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-          <div class="modal-wrapper">
-            <div class="modal-container">
-
-              <div class="modal-header" id="modalTitle">
-                <slot name="header">
-                  Company Login
-                </slot>
-         <a href="">  <button type="button" class="btn-close" aria-label="Close"></button> </a>
-
-              </div>
-
-  <form>
+   
+<div class="modal fade" id="Signup3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+              <form>
       <div class="loginform" id="seedlogin">
         <form class="row g-3 needs-validation" novalidate>
              <div class="loginform" id="LogInCF">
@@ -56,8 +50,8 @@
                 
             </div>
                           <div class="options text-center text-md-right mt-1">
-                             <p> Wrong account type? <a href="LoginModals" class="blue-text">Choose account type</a></p>
-                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p> Wrong account type? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginModals" >Choose account type</button></p>
+                <p>Not a member? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Signup3" >Sign Up</button></p>
                 <p>Forgot <a href="#" class="blue-text">Password?</a></p>
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -66,28 +60,29 @@
     </div>
      
             </form>
-   
-
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button" @click="$emit('close')" aria-label="Close modal">
-                    OK
-                  </button>
-                </slot>
-              </div> 
-            </div>
-          </div>
-        </div>
-      <!-- </transition> -->
-      
+      <div class="modal-footer">
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<Signup3> </Signup3>
+<LoginModals></LoginModals>
+
 </template>
 
 <script>
+import LoginModals from './LoginModals.vue'
+import Signup3 from './signup3.vue'
+
 export default {
     name: 'LogInCF',
-  components: {
+  components: { 
+LoginModals, Signup3, 
+
     
   },
   methods: {
