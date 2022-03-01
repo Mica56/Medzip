@@ -1,4 +1,11 @@
 <template>
+<div class="modal fade" id="SignupmodalsCompany" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Company Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
     <div class="companysignupform">
         <form class="row g-3 needs-validation" novalidate>
                        <div class="mb-3">
@@ -62,17 +69,26 @@
       </div>
     </div>
   </div>
- <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+        <div class="modal-footer">
+<div class="col-auto">
+     <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Signup3"> Return</button>
+    <button type="submit" class="btn btn-primary ">Submit</button>
   </div>
-        </form>
+   </div>
     </div>
+      </div>
+  </div>
+</div>
+<Signup3> </Signup3>
 </template>
 
 <script>
+import Signup3 from './signup3.vue'
+
 export default {
     name: 'SignupmodalsCompany',
-  components: {
+  components: { Signup3,
     
   },
   methods: {
