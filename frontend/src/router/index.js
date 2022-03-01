@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue'),
     // children: [
@@ -73,6 +73,73 @@ const routes = [
   path: '/chats',
   name: 'chats',
   component: () => import('../components/Userspecific/chat.vue')
+},
+
+{
+  path: '/profile',
+  name: 'profile',
+  component: () => import('../components/Userspecific/profile.vue')
+},
+
+{
+  path: '/profileuser',
+  name: 'profileuser',
+  component: () => import('../components/Userspecific/profileuser.vue')
+},
+
+{
+  path: '/profilesummary',
+  name: 'profilesummar',
+  component: () => import('../components/Userspecific/profilesummary.vue')
+},
+
+{
+  path: '/doctorprofile',
+  name: 'doctorprofile',
+  component: () => import('../components/Userspecific/doctorprofile.vue')
+},
+
+
+{
+  path: '/profilesettings',
+  name: 'profilesettings',
+  component: () => import('../components/Userspecific/profilesetting.vue')
+},
+
+{
+  path: '/settings',
+  name: 'settings',
+  component: () => import('../components/Userspecific/settings.vue')
+},
+
+{
+  path: '/doctors',
+  name: 'doctors',
+  component: () => import('../components/Userspecific/doctors.vue')
+},
+
+{
+  path: '/Doctorrequest',
+  name: 'Doctorrequest',
+  component: () => import('../components/Userspecific/doctorrequest.vue')
+},
+
+{
+  path: '/Pharmacistrequest',
+  name: 'Pharmacistrequest',
+  component: () => import('../components/Userspecific/pharmacistrequest.vue')
+},
+
+{
+  path: '/pharmacistprofile',
+  name: 'pharmacistprofile',
+  component: () => import('../components/Userspecific/pharmacistprofile.vue')
+},
+
+{
+  path: '/pharmacists',
+  name: 'pharmacists',
+  component: () => import('../components/Userspecific/pharmacists.vue')
 },
 
 {
