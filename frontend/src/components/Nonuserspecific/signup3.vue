@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
@@ -16,6 +16,7 @@
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignupmodalsCompany"> Inquire</button>
                       <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">
                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SUMModals"> Inquire</button>
+  <p> Do you have an account? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginModals" >Login</button></p>
 
                     </div>
       </div>
@@ -25,16 +26,19 @@
 <SignupmodalsCompany></SignupmodalsCompany>
 <SUMModals></SUMModals>
 <SUPmodal></SUPmodal>
+<LoginModals></LoginModals>
+
 </template>
 
 <script>
 import SignupmodalsCompany from './SignUpCompanyform.vue'
 import SUMModals from './SignUpMemberModal.vue'
 import SUPmodal from './Signupprovidersmodal.vue'
+import LoginModals from './LoginModals.vue'
 
 export default {
     name: 'Signup3',
-  components: { SignupmodalsCompany, SUMModals, SUPmodal,
+  components: { SignupmodalsCompany, SUMModals, SUPmodal, LoginModals,
   },
 }
 </script>
