@@ -56,7 +56,7 @@ To run the backend app, on your terminal, activate the virtual environment then 
  cd backend
  python manage.py runserver
 ```
-> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link</br>
+> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link
 
 # FAQS:
 
