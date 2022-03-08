@@ -1,16 +1,14 @@
 # Medzip
-
-Progress Report:</br>
-- [x] setup repo
-- [x] Initial setup w/ navbar  
-
 Frameworks implemented:</br>
 - [VueJs](https://vuejs.org/) & [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) for the frontend
+- [Django REST Framework](https://www.django-rest-framework.org/) for the backend
 
 ## Note:
 To run/edit the program on your machine you need to install</br>
 - [VSCode](https://code.visualstudio.com/) or any code editor that is Javascript compatible
 - [npm](https://nodejs.org/en/)
+- [python](https://www.python.org/downloads/)
+- python and Vetur extensions on VSCode (if you uses VSCode as your code editor)
 
 Next, on your terminal do the following:</br>
 - Once you have npm installed you can run the following both to install and upgrade [Yarn](https://classic.yarnpkg.com/en/)
@@ -25,12 +23,39 @@ Next, on your terminal do the following:</br>
 ```
  yarn install
 ```
-To run the code, on your terminal you type and enter:</br>
+- Check if python is installed</br>
+```
+ python --version
+```
+- Install [pip](https://pip.pypa.io/en/stable/installation/)</br>
+```
+ py get-pip.py
+```
+- Install virtual environment</br>
+```
+ pip install pipenv
+```
+- Activate the virtual environment and install the ff. [django](https://docs.djangoproject.com/en/4.0/) dependencies</br>
+```
+ pipenv shell
+ pip install django
+ pip install django-rest-framework
+ pip install django-cors-headers
+ pip install djoser
+```
+To run the frontend app, on your terminal you type and enter:</br>
 ```
  cd frontend
  yarn serve
 ```
-> Then, click either 'Local' or 'Network' running link.
+> Then, click either 'Local' or 'Network' running link.</br>
+To run the backend app, on your terminal, activate the virtual environment then type and enter:</br>
+```
+ pipenv shell
+ cd backend
+ python manage.py runserver
+```
+> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link</br>
 
 # FAQS:
 
@@ -96,5 +121,10 @@ Find a suitable area to put the files and type the command.
 -  Note : A pull request is where we evaluate and finalize your submitted work, and make any possible changes. In the industry, this process is also known as "code review".
 
 (Credits to MostDeadDeveloper)
+
+# Django Tutorials and supplements:
+- [Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg&t=755s)
+- [Django REST Framework Oversimplified](https://www.youtube.com/watch?v=cJveiktaOSQ)
+- [E-commerce Website With Django and Vue Tutorial (Django Rest Framework)](https://www.youtube.com/watch?v=Yg5zkd9nm6w)
 
 </br></br> (A project of Justine Miralles,  et. al.)
