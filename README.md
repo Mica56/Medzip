@@ -50,13 +50,14 @@ To run the frontend app, on your terminal you type and enter:</br>
 ```
 > Then, click either 'Local' or 'Network' running link.</br>
 </br>
-To run the backend app, on your terminal, activate the virtual environment then type and enter:
+To run the backend app, on your terminal, activate the virtual environment then type and enter:</br>
 ```
  pipenv shell
  cd backend
  python manage.py runserver
 ```
-> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link
+</br>
+> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link</br>
 
 # FAQS:
 
