@@ -49,6 +49,7 @@ To run the frontend app, on your terminal you type and enter:</br>
  yarn serve
 ```
 > Then, click either 'Local' or 'Network' running link.</br>
+</br>
 To run the backend app, on your terminal, activate the virtual environment then type and enter:</br>
 ```
  pipenv shell
