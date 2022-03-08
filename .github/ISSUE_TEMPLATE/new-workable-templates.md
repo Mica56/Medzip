@@ -1,7 +1,7 @@
 ---
 name: New-Workable-Templates
-about: Medzip-<number-ticket> - <Brief Title of the Issue>
-title: ''
+about: Describe the Bug Here. If this doesn’t look right, choose a different type.
+title: Medzip-<number-ticket> - <Brief Title of the Issue>
 labels: ''
 assignees: ''
 
