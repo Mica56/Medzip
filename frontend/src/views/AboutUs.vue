@@ -1,4 +1,5 @@
 <template>
+<div>
 <div class="AboutUs">
 
 
@@ -66,7 +67,7 @@
 
 </div>
 <Creators> </Creators>
-
+</div>
 </template>
 
 <script>
