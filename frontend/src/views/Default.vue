@@ -1,6 +1,6 @@
 <template>
-  <div>
-  <!-- Navigation-->
+    <div>
+   <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #fff ;">
       <!-- Navbar content -->
       <div class="container-fluid">
@@ -28,50 +28,63 @@
         </div>
       </div>
     </nav>
-    <section class="page-section" id="partners">
+     <!-- LoginModals -->
+    <LoginModals></LoginModals>
+    <Signup3></Signup3>
+    <router-view/>
+    <!-- Masthead-->
+         <img src="../assets/IMG.png" class="rounded float-end" alt="right" id="right">
+        <header class="masthead">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Partner Company</h2>
-                    <h3 class="section-subheading text-muted">Trusted and verified companies in relation to healh and wellness.</h3>
-                </div>
+                <div class="masthead-heading text-uppercase fs-3">We provide easy solutions to your Healthcare needs</div>
+                <div class="masthead-subheading fs-4">Medzip is a platform for patients, healthcare providers, and health care companies to utilize the safety and security of blockchain database</div><br>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#">GET STARTED</a>
             </div>
-            <div class="card mb-3" style="w-100; h-100; center">
-  <div class="row g-0">
-    <div class="col-md-2">
-      <img src="../assets/umaklogo.png" class="img-fluid rounded-start" alt="..." width="200" height="200" >
+        </header>
+
+    <AboutUs></AboutUs>
+    <Footer></Footer>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">University of Makati</h5>
-        <p class="card-text">The University of Makati, or simply "UMak," assists us in bringing MedZip to the public's attention, notably the university Medical and Dental Clinic, as they are the major players in the platform's growth. The faculty staffs of the College of Allied Health Studies' Center of Pharmacy also assisted in refining the design of this platform so that it could be adequately presented to the users.</p>
-               <a href="https://www.umak.edu.ph/" class="btn btn-primary">Learn more</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- LoginModals -->
-<LoginModals></LoginModals>
-<Signup3></Signup3>
-<Footer></Footer>
-</div>
 </template>
 
 <script>
 import LoginModals from '../components/Nonuserspecific/LoginModals.vue'
 import Signup3 from '../components/Nonuserspecific/signup3.vue'
+import AboutUs from './AboutUs.vue'
 import Footer from './footer.vue'
 
 export default {
-    name: 'Partners',
+  name: 'Default',
   components: {
     LoginModals,
+    Footer, 
     Signup3,
-    Footer
+    AboutUs,
   },
+  data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
+
 }
 </script>
 
 <style>
-
+.nav-link {
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
 </style>
