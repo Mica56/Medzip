@@ -1,34 +1,5 @@
 <template>
   <div class="home">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #fff ;">
-      <!-- Navbar content -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#page-top">
-          <!-- class="d-inline-block align-text-top" -->
-          <img src="/frontend/src/assets/MEDZIP.png" alt="logo" width="150" height="200" > 
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav justify-content-center ms-auto py-4 py-lg-0" >
-            <!-- <router-link style="text-decoration: none; color: inherit;" to="/">Home</router-link> -->
-            <a class="nav-link" aria-current="page">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>
-            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Account Name //shows when user login
-            </a> -->
-            <button class="btn btn-outline-primary me-2" type="button"  data-bs-toggle="modal" data-bs-target="#LoginModals" >Login</button>
-           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Signup3"> Sign Up</button>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
     <!-- Masthead-->
          <img src="../assets/IMG.png" class="rounded float-end" alt="right" id="right">
         <header class="masthead">
@@ -38,54 +9,38 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#">GET STARTED</a>
             </div>
         </header>
-        <!-- LoginModals -->
-    <LoginModals></LoginModals>
-    <router-view/>
+        <header class="masthead">
+                      <div class="container">
+ <div class="row g-0">
+    <div class="col-md">
+      <img src="../assets/about1.png" class="img-fluid rounded-start" alt="..." width="1500" height="1500" >
+    </div>
+    <div class="col-md">
+                <div class="masthead-heading text-uppercase fs-2">
+                  <p class="text-center">About MedZip</p>
+                  </div>
+                <div class="masthead-subheading fs-4">MedZip was founded with the goal of providing technical solutions that would have a positive impact on the healthcare industry. The creators came up with the name "MedZip" as a trademark for the platform, which combines the terms "Medical" and ".zip." We have the best data secured application databases for the of the patients which provides a user friendly software to easily track medical records. We assure safety access of the patient of merdical professionals for their medical references ensured to have data access provided with verification security blockchain.</div><br>
+            </div>
+                        </div>
+ </div>
+        </header>
 
-    <Signup3></Signup3>
     <AboutUs></AboutUs>
-  <Footer></Footer>
   </div>
 </template>
 
 <script>
 import AboutUs from "./AboutUs.vue"
-import LoginModals from '../components/Nonuserspecific/LoginModals.vue'
-import Signup3 from '../components/Nonuserspecific/signup3.vue'
-import Footer from './footer.vue'
 // @ is an alias to /src
+//import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
     AboutUs,
-    LoginModals,
-    Footer, 
-    Signup3,
-  },
-  data() {
-      return {
-        isModalVisible: false,
-      };
-    },
-    methods: {
-      showModal() {
-        this.isModalVisible = true;
-      },
-      closeModal() {
-        this.isModalVisible = false;
-      }
-    }
+  }
 }
 </script>
 <style>
-.nav-link {
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-color: #000000;
 
-}
 </style>
