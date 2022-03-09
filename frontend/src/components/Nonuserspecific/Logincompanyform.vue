@@ -1,6 +1,6 @@
 
 <template>
-<div> 
+   
 <div class="modal fade" id="LogInCF" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -73,7 +73,7 @@
 
 <Signup3> </Signup3>
 <LoginModals></LoginModals>
-</div>
+
 </template>
 
 <script>
