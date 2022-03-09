@@ -1,15 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router' 
+import MainView from '../views/Default.vue'
+import MainAuth from '../views/MainAuth.vue'
 
 const routes = [
   {
     path: '/',
+    components: {
+      default: MainView ,
+      authed: MainAuth,
+    }
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: () => import('../views/Home.vue'),
     // children: [
       
     // ]
   },
-
   {
     path: '/about',
     name: 'About',
