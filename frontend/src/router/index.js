@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router' 
 import MainView from '../views/Default.vue'
-import MainAuth from '../views/MainAuth.vue'
+import ProviderView from '../views/ProviderView.vue'
 
 const routes = [
   {
     path: '/',
     components: {
       default: MainView ,
-      authed: MainAuth,
+      authed: ProviderView,
     }
   },
   {
