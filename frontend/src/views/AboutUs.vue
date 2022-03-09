@@ -1,10 +1,10 @@
 <template>
 <div>
-<div id="about" class="AboutUs">
+    <div id="about" class="AboutUs">
 
-<header class="masthead">
-<div class="container">
-<div class="row g-0">
+    <header class="masthead">
+    <div class="container">
+    <div class="row g-0">
     <div class="col-md">
         <img src="../assets/about1.png" class="img-fluid rounded-start" alt="..." width="1500" height="1500" >
     </div>
@@ -15,73 +15,73 @@
         <div class="masthead-subheading fs-4">MedZip was founded with the goal of providing technical solutions that would have a positive impact on the healthcare industry. The creators came up with the name "MedZip" as a trademark for the platform, which combines the terms "Medical" and ".zip." We have the best data secured application databases for the of the patients which provides a user friendly software to easily track medical records. We assure safety access of the patient of merdical professionals for their medical references ensured to have data access provided with verification security blockchain.</div><br>
     </div>
     </div>
-</div>
-</header>
+    </div>
+    </header>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container bootdey">
-<div class="row gutters">
-<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-<div class="card">
-<div class="card-body">
-<!-- Timeline start -->
-<div class="timeline">
-	<div class="timeline-row">
-		<div class="timeline-dot fb-bg"></div>
-		<div class="timeline-content">
-			<i class="fa fa-map-marker"></i>
-			<h4>Phase 1 (2022)</h4>
-			<p>Development of White paper</p>
-		</div>
-	</div>
-	<div class="timeline-row">
-		<div class="timeline-dot green-one-bg"></div>
-		<div class="timeline-content green-one">
-			<i class="fa fa-map-marker"></i>
-			<h4>Phase 2 (2022)</h4>
-			<p>
-				Development of MedZip Blockchain and Website Application
-			</p>
-		</div>
-	</div>
-	<div class="timeline-row">
-		<div class="timeline-dot green-two-bg"></div>
-		<div class="timeline-content green-two">
-			<i class="fa fa-map-marker"></i>
-			<h4>Phase 3 (2022)</h4>
-			<p>Pilot testing and feedback on MedZipCustom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.</p>
-		</div>
-	</div>
-	<div class="timeline-row">
-		<div class="timeline-dot green-three-bg"></div>
-		<div class="timeline-content green-three">
-			<i class="fa fa-map-marker"></i>
-			<h4>Phase 4 (2022)</h4>
-			<p>
-				Feedback Assessment
-			</p>
-		</div>
-	</div>
-	<div class="timeline-row">
-		<div class="timeline-dot green-four-bg"></div>
-		<div class="timeline-content green-four">
-			<i class="fa fa-map-marker"></i>
-			<h4>Phase 5 (2022)</h4>
-			<p class="no-margin">Enhancement and Recommendation</p>	
-		</div>
-	</div>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container bootdey">
+    <div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="card">
+    <div class="card-body">
+    <!-- Timeline start -->
+    <div class="timeline">
+    <div class="timeline-row">
+        <div class="timeline-dot fb-bg"></div>
+        <div class="timeline-content">
+            <i class="fa fa-map-marker"></i>
+            <h4>Phase 1 (2022)</h4>
+            <p>Development of White paper</p>
+        </div>
+    </div>
+    <div class="timeline-row">
+        <div class="timeline-dot green-one-bg"></div>
+        <div class="timeline-content green-one">
+            <i class="fa fa-map-marker"></i>
+            <h4>Phase 2 (2022)</h4>
+            <p>
+                Development of MedZip Blockchain and Website Application
+            </p>
+        </div>
+    </div>
+    <div class="timeline-row">
+        <div class="timeline-dot green-two-bg"></div>
+        <div class="timeline-content green-two">
+            <i class="fa fa-map-marker"></i>
+            <h4>Phase 3 (2022)</h4>
+            <p>Pilot testing and feedback on MedZipCustom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.</p>
+        </div>
+    </div>
+    <div class="timeline-row">
+        <div class="timeline-dot green-three-bg"></div>
+        <div class="timeline-content green-three">
+            <i class="fa fa-map-marker"></i>
+            <h4>Phase 4 (2022)</h4>
+            <p>
+                Feedback Assessment
+            </p>
+        </div>
+    </div>
+    <div class="timeline-row">
+        <div class="timeline-dot green-four-bg"></div>
+        <div class="timeline-content green-four">
+            <i class="fa fa-map-marker"></i>
+            <h4>Phase 5 (2022)</h4>
+            <p class="no-margin">Enhancement and Recommendation</p>	
+        </div>
+    </div>
 
-</div>
-<!-- Timeline end -->
-</div>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    <!-- Timeline end -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
-</div>
-<Creators> </Creators>
+    </div>
+    <Creators> </Creators>
 </div>
 </template>
 
