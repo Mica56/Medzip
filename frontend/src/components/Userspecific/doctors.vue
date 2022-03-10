@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="container">
 <div class="main-body">
   <div class="text-center">
@@ -189,6 +190,7 @@
     </div>
     </div>
        <Doctorrequest></Doctorrequest>
+</div>
 </template>
 
 <script>

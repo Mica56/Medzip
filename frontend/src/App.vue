@@ -1,8 +1,13 @@
 <template>
   <div>
-  
-    <template v-if="1==0">
-      <router-view name="authed"/>
+    <!-- <LoginModals @selectedUser="capturedMessage" /> -->
+    <!-- Ewan ko ba basta '{{ isPatient }}' -->
+    <template v-if="isProvider">
+      <router-view name="provider"/>
+    </template>
+
+    <template v-else-if="isPatient">
+      <router-view name="patient"/>
     </template>
   
     <template v-else>
@@ -13,13 +18,27 @@
 </template>
 
 <script>
+// import LoginModals from './components/Nonuserspecific/LoginModals.vue'
 
 export default {
   name: 'App',
   components: {
-
+    // LoginModals,
   },
-
+  data() {
+      return {
+        isPatient: false,
+        isProvider: false
+      };
+    },
+  // methods: {
+  //   capturedMessaged(value){
+  //     if (value == 'patient'){
+  //       this.isPatient = true;
+  //     };
+  //   }
+  // },
+  // props: ['selectedUser']
 }
 
 </script>
