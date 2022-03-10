@@ -16,15 +16,15 @@
     <div class="row">
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                            <button v-on:click="isSelectedUser= 'provider'" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                      </div>
                     <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> 
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
+                            <button v-on:click="isSelectedUser" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
                      </div>
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">
-                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                       <button v-on:click="isSelectedUser = 'patient'" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                       </div>
                 </div>
 
@@ -51,10 +51,18 @@ export default {
   components: { LoginFormDef, LogInCF, Signup3,
     // LoginForm
   },
+  // data() {
+  //   return {
+  //     isSelectedUser: 'patient'
+  //   };
+  // },
   methods: {
     close() {
       this.$emit('close');
     },
+    // sendMessageToParent(){
+    //   this.$emit("selectedUser", this.isSelectedUser);
+    // }
     // showModal() {
     //     this.isModalVisible = true;
     // },
@@ -62,6 +70,9 @@ export default {
     //   this.isModalVisible = false;
     // }
   },
+  // mounted(){
+  //   this.sendMessageToParent();
+  // },
 }
 </script>
 

@@ -110,7 +110,7 @@ import Signup3 from '../components/Nonuserspecific/signup3.vue'
 import Footer from './footer.vue'
 
 export default {
-    name: 'Provider',
+  name: 'Provider',
   components: {
     LoginModals,
     Signup3,

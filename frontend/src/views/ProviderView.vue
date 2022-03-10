@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'ProviderView',
+  name: 'ProviderView',
 }
 </script>
 
