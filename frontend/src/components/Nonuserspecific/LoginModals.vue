@@ -16,15 +16,15 @@
     <div class="row">
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250">
-                            <button v-on:click="isSelectedUser= 'provider'" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                            <button v-on="isSelectedUser = 1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                      </div>
                     <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> 
-                            <button v-on:click="isSelectedUser" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
+                            <button v-on="isSelectedUser = 2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
                      </div>
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">
-                       <button v-on:click="isSelectedUser = 'patient'" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                       <button v-on="isSelectedUser = 3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                       </div>
                 </div>
 
@@ -69,6 +69,7 @@ export default {
     // closeModal() {
     //   this.isModalVisible = false;
     // }
+
   },
   // mounted(){
   //   this.sendMessageToParent();
