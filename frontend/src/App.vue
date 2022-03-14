@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- <LoginModals @selectedUser="capturedMessage" /> -->
-    <!-- Ewan ko ba basta '{{ isPatient }}' -->
+    <!-- <Login @selectedUser="capturedMessage" /> -->
+    <!-- Ewan ko ba basta '{{ isProvider }}' -->
     <template v-if="isProvider">
       <router-view name="provider"/>
     </template>
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-// import LoginModals from './components/Nonuserspecific/LoginModals.vue'
+import Login from './components/Nonuserspecific/LoginModals.vue'
 
 export default {
   name: 'App',
   components: {
-    // LoginModals,
+    Login,
   },
   data() {
       return {
@@ -33,8 +33,8 @@ export default {
     },
   // methods: {
   //   capturedMessaged(value){
-  //     if (value == 'patient'){
-  //       this.isPatient = true;
+  //     if (value == 1){
+  //       this.isProvider = true;
   //     };
   //   }
   // },
