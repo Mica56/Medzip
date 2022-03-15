@@ -16,15 +16,15 @@
     <div class="row">
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/1.png"  height="250" width="250">
-                            <button v-on="isSelectedUser = 1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                            <button id="ProviderLogin" @click="setLoginType('provider')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                      </div>
                     <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> 
-                            <button v-on="isSelectedUser = 2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
+                            <button @click="setLoginType('company')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
                      </div>
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">
-                       <button v-on="isSelectedUser = 3" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
+                       <button @click="setLoginType('patient')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginFormDef"> Inquire</button>
                       </div>
                 </div>
 
@@ -51,17 +51,22 @@ export default {
   components: { LoginFormDef, LogInCF, Signup3,
     // LoginForm
   },
-  // data() {
-  //   return {
-  //     isSelectedUser: 'patient'
-  //   };
-  // },
+  data() {
+    return {
+      loginType: 'default',
+    };
+  },
   methods: {
     close() {
       this.$emit('close');
     },
+    setLoginType(key){
+      this.loginType = key;
+      this.$emit("selectedUser", this.loginType);
+    },
     // sendMessageToParent(){
-    //   this.$emit("selectedUser", this.isSelectedUser);
+    //   console.log("after here ->" + this.loginType);
+    //   this.$emit("selectedUser", this.loginType);
     // }
     // showModal() {
     //     this.isModalVisible = true;
