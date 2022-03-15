@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- <Login @selectedUser="capturedMessage" /> -->
-    <!-- Ewan ko ba basta '{{ isProvider }}' -->
+    <Login @selectedUser="capturedMessage" />
     <template v-if="isProvider">
       <router-view name="provider"/>
     </template>
@@ -25,20 +24,26 @@ export default {
   components: {
     Login,
   },
+  
   data() {
       return {
-        isPatient: false,
-        isProvider: false
+        loginType: 'default'
       };
     },
-  // methods: {
-  //   capturedMessaged(value){
-  //     if (value == 1){
-  //       this.isProvider = true;
-  //     };
-  //   }
-  // },
-  // props: ['selectedUser']
+  methods: {
+    capturedMessage(value){
+      this.loginType = value;
+    },
+    
+  },
+  computed: {
+    isProvider(){
+      return this.loginType === 'provider'
+    },
+    isPatient() {
+      return this.loginType === 'patient'
+    }
+  }
 }
 
 </script>
