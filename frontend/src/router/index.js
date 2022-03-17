@@ -6,20 +6,33 @@ import PatientView from '../views/PatientView.vue'
 const routes = [
   {
     path: '/',
+    
     components: {
       default: MainView ,
       provider: ProviderView,
       patient: PatientView,
-    }
+    },
+    children: [
+      {
+        path: '',
+        name: 'Home',
+        component: () => import('../views/Home.vue'),
+        alias: '/home'
+      },
+      {
+        path: '/partners',
+        name: 'Partners',
+        component: () => import('../views/Partnercompany.vue')
+      }, 
+    
+      {
+        path: '/providers',
+        name: 'Providers',
+        component: () => import('../views/Providers.vue')
+      },
+    ]
   },
-  {
-    path: '/home',
-    name: 'Home',
-    component: () => import('../views/Home.vue'),
-    // children: [
-      
-    // ]
-  },
+  
   {
     path: '/about',
     name: 'About',
@@ -27,18 +40,6 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutUs.vue')
-  },
-
-  {
-    path: '/partners',
-    name: 'Partners',
-    component: () => import('../views/Partnercompany.vue')
-  }, 
-
-  {
-    path: '/providers',
-    name: 'Providers',
-    component: () => import('../views/Providers.vue')
   },
   
 // {
