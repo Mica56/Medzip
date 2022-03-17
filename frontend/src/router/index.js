@@ -37,8 +37,7 @@ const routes = [
       },
     ]
   },
-  
-  
+   
 // {
 //   path: '/LoginFormDef',
 //   name: 'LoginFormDef',
