@@ -29,8 +29,9 @@
     </nav>
      <!-- LoginModals -->
     <LoginModals></LoginModals>
-    <router-view/>
-    
+    <section>
+      <router-view/>
+    </section>
     <Footer></Footer>
     </div>
 </template>

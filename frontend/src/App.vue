@@ -1,6 +1,7 @@
 <template>
   <div>
     <Login @selectedUser="capturedMessage" />
+  
     <template v-if="isProvider">
       <router-view name="provider"/>
     </template>
