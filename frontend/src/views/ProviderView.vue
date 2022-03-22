@@ -24,10 +24,10 @@
             Provider User ID 
             </a>
             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink" dropdown-menu-lg-end>
-              <li><a class="dropdown-item" href="#">Profile Information</a></li>
-              <li><a class="dropdown-item" href="#">Smart Contracts</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/profile">Profile Information</router-link></a></li>
+              <li><a class="dropdown-item disabled " href="#">Smart Contracts</a></li>
               <li><a class="dropdown-item" href="#">Transaction History</a></li> 
-              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/settings">Settings</router-link></a></li>
             </ul>
           </ul>
         </div>

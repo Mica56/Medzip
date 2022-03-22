@@ -20,7 +20,7 @@
                      </div>
                     <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/2.png" height="250" width="250"> 
-                            <button @click="setLoginType('company')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF"> Inquire</button>
+                            <button @click="setLoginType('company')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LogInCF" disabled> Inquire</button>
                      </div>
                      <div class="col-md-4">
                       <img src="../Nonuserspecific/UserType/3.png"  height="250" width="250">

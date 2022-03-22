@@ -247,7 +247,7 @@
     </div>
 
     <div class="text-right mt-3">
-      <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+       <a class="btn btn-primary" role="button"><router-link style="text-decoration: none; color: inherit;" to="/profile">Save changes</router-link></a>
       <button type="button" class="btn btn-default">Cancel</button>
     </div>
 

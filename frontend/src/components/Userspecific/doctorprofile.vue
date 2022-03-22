@@ -95,8 +95,8 @@
             </div>
           </div>
         </div>
+            <Doctorrequest></Doctorrequest>
     </div>
-    <Doctorrequest></Doctorrequest>
 </template>
 
 <script>

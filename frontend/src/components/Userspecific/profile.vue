@@ -13,7 +13,7 @@
                       <h4>John Doe</h4>
                       <p class="text-secondary mb-1">Full Stack Developer</p>
                       <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                      <button class="btn btn-outline-primary">Message</button>
+                      <a class="btn btn-primary" role="button"><router-link style="text-decoration: none; color: inherit;" to="/settings">Settings</router-link></a>
                     </div>
                   </div>
                 </div>
