@@ -35,6 +35,37 @@ const routes = [
         name: 'Providers',
         component: () => import('../views/Providers.vue')
       },
+      {
+        path: '/settings',
+        name: 'settings',
+        component: () => import('../components/Userspecific/settings.vue')
+      },
+      
+      {
+        path: '/profile',
+        name: 'profile',
+        component: () => import('../components/Userspecific/profile.vue')
+      },
+      {
+        path: '/doctors',
+        name: 'doctors',
+        component: () => import('../components/Userspecific/doctors.vue')
+      },
+      {
+         path: '/pharmacists',
+         name: 'pharmacists',
+         component: () => import('../components/Userspecific/pharmacists.vue')
+      },
+      {
+        path: '/doctorprofile',
+        name: 'doctorprofile',
+        component: () => import('../components/Userspecific/doctorprofile.vue')
+      },
+      {
+        path: '/pharmacistprofile',
+        name: 'pharmacistprofile',
+        component: () => import('../components/Userspecific/pharmacistprofile.vue')
+      },        
     ]
   },
    
@@ -82,11 +113,6 @@ const routes = [
 //   component: () => import('../components/Userspecific/chat.vue')
 // },
 
-// {
-//   path: '/profile',
-//   name: 'profile',
-//   component: () => import('../components/Userspecific/profile.vue')
-// },
 
 // {
 //   path: '/profileuser',

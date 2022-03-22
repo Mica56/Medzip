@@ -152,8 +152,8 @@
               <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
             </div>
             <div class="card-footer">
-                                        <a class="btn btn-outline-primary" href="/doctorprofile" role="button">Profile</a>
-                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inquire</button>
+               <a class="btn btn-outline-primary" href="/doctorprofile" role="button">Profile</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inquire</button>
          </div>
           </div>
         </div>
@@ -167,7 +167,8 @@
               <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
             </div>
             <div class="card-footer">
-                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inquire</button>
+          <a class="btn btn-outline-primary" href="/doctorprofile" role="button">Profile</a>
+             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Inquire</button>
           </div>
           </div>
         </div>
