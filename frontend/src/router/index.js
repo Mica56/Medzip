@@ -65,9 +65,13 @@ const routes = [
         name: 'pharmacistprofile',
         component: () => import('../components/Userspecific/pharmacistprofile.vue')
       },        
-    ]
+    ], 
   },
-   
+  {
+    path: '/default',
+    name: 'Default',
+    component: MainView
+  },
 
 ]
 

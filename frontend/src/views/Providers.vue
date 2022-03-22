@@ -13,7 +13,7 @@
       <div class="card-body">
         <h5 class="card-title">Doctors</h5>
                 <p class="card-text">Coordinate with physicians from different specializations.</p>
-       <a href="doctors" class="btn btn-primary">Contact one here</a>
+       <a class="btn btn-primary"><router-link style="text-decoration: none; color: inherit;" to="/doctors">Contact one here</router-link></a>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
       <div class="card-body">
         <h5 class="card-title">Pharmacists</h5>
         <p class="card-text">Coordinate with Pharmacists for pharmacologic therapy to share. </p>
-        <a href="pharmacists" class="btn btn-primary ">Contact one here</a>
+        <a class="btn btn-primary "><router-link style="text-decoration: none; color: inherit;" to="/pharmacists">Contact one here</router-link></a>
       </div>
     </div>
   </div>

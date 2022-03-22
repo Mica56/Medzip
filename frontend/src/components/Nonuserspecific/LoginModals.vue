@@ -64,10 +64,7 @@ export default {
       this.loginType = key;
       this.$emit("selectedUser", this.loginType);
     },
-    // sendMessageToParent(){
-    //   console.log("after here ->" + this.loginType);
-    //   this.$emit("selectedUser", this.loginType);
-    // }
+
     // showModal() {
     //     this.isModalVisible = true;
     // },
@@ -76,9 +73,6 @@ export default {
     // }
 
   },
-  // mounted(){
-  //   this.sendMessageToParent();
-  // },
 }
 </script>
 
