@@ -35,6 +35,16 @@ const routes = [
         name: 'Providers',
         component: () => import('../views/Providers.vue')
       },
+      {
+        path: '/pharmacists',
+        name: 'pharmacists',
+        component: () => import('../components/Userspecific/pharmacists.vue')
+      },
+      {
+        path: '/doctors',
+        name: 'doctors',
+        component: () => import('../components/Userspecific/doctors.vue')
+      },
     ]
   },
   
@@ -121,12 +131,6 @@ const routes = [
 // },
 
 // {
-//   path: '/doctors',
-//   name: 'doctors',
-//   component: () => import('../components/Userspecific/doctors.vue')
-// },
-
-// {
 //   path: '/Doctorrequest',
 //   name: 'Doctorrequest',
 //   component: () => import('../components/Userspecific/doctorrequest.vue')
@@ -144,11 +148,7 @@ const routes = [
 //   component: () => import('../components/Userspecific/pharmacistprofile.vue')
 // },
 
-// {
-//   path: '/pharmacists',
-//   name: 'pharmacists',
-//   component: () => import('../components/Userspecific/pharmacists.vue')
-// },
+
 
 // {
 //   path: '/SignupmodalsCompany',
