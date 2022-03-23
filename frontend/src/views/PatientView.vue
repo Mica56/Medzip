@@ -25,13 +25,16 @@
               <li><a class="dropdown-item" href="#">Profile Information</a></li>
               <li><a class="dropdown-item disabled" href="#" >Smart Contracts</a></li>
               <li><a class="dropdown-item" href="#">Transaction History</a></li> 
-              <li><a class="dropdown-item" href="/settings">Settings</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/settings">Settings</router-link></a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/default">Logout</router-link></a></li>
               </ul>
           </ul>
         </div>
       </div>
     </nav>
-    <router-view/>
+    <section>
+      <router-view/>
+    </section>
 
     <Footer></Footer>
   </div>
@@ -45,6 +48,7 @@ export default {
   components: {
     Footer, 
   },
+
 }
 </script>
 

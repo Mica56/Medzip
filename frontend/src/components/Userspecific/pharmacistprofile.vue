@@ -95,8 +95,8 @@
             </div>
           </div>
         </div>
+       <Pharmacistrequest></Pharmacistrequest>
     </div>
-        <Pharmacistrequest></Pharmacistrequest>
 </template>
 
 <script>
