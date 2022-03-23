@@ -35,16 +35,16 @@
 </div>
 
 <div>
-      <label for="Requests" class="form-label"> Requests: </label>
- <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">Medical certifcate</label>
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Attach Medical certifcate</label>
-              <input class="form-control" type="file" id="formFile" required>
-              </div>
-</div>
-<div class="form-check form-check-inline">
+  <label for="Requests" class="form-label"> Requests: </label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">Medical certifcate</label>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Attach Medical certifcate</label>
+          <input class="form-control" type="file" id="formFile" required>
+        </div>
+    </div>
+  <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
   <label class="form-check-label" for="inlineCheckbox2">E-prescripiton</label>
     <div class="mb-3">

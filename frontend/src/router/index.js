@@ -65,9 +65,10 @@ const routes = [
         name: 'pharmacistprofile',
         component: () => import('../components/Userspecific/pharmacistprofile.vue')
       },        
+
       {
-        path: '/patiens',
-        name: 'patiens',
+        path: '/patients',
+        name: 'patients',
         component: () => import('../components/Userspecific/patients.vue')
       },    
     ], 

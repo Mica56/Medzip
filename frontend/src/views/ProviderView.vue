@@ -37,6 +37,7 @@
     <section>
       <router-view/>
     </section>
+    
     <Footer></Footer>
   </div>
 </template>
