@@ -67,8 +67,8 @@ const routes = [
       },        
 
       {
-        path: '/patiens',
-        name: 'patiens',
+        path: '/patients',
+        name: 'patients',
         component: () => import('../components/Userspecific/patients.vue')
       },    
     ], 
