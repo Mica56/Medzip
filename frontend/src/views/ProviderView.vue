@@ -19,7 +19,7 @@
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/about">About</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>
-            <a class="nav-link" href="#">Patients</a>
+            <a class="nav-link" href="/patients">Patients</a>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Provider User ID 
             </a>
@@ -37,7 +37,7 @@
     <section>
       <router-view/>
     </section>
-
+    
     <Footer></Footer>
   </div>
 </template>
