@@ -65,12 +65,17 @@ const routes = [
         name: 'pharmacistprofile',
         component: () => import('../components/Userspecific/pharmacistprofile.vue')
       },        
-
+      {
+        path: '/transactionhistory',
+        name: 'transactionhistory',
+        component: () => import('../components/Userspecific/transactionhistory.vue')
+      },  
       {
         path: '/patients',
         name: 'patients',
         component: () => import('../components/Userspecific/patients.vue')
       },    
+ 
     ], 
   },
   {
