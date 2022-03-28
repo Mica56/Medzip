@@ -27,7 +27,7 @@
               <li><a class="dropdown-item" href="#">Transaction History</a></li> 
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/settings">Settings</router-link></a></li>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/default">Logout</router-link></a></li>
-              </ul>
+            </ul>
           </ul>
         </div>
       </div>
