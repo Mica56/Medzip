@@ -35,6 +35,21 @@ const routes = [
         component: () => import('../views/Providers.vue')
       },
       {
+        path: '/providerpatient',
+        name: 'Providerpatient',
+        component: () => import('../views/ProviderPatient.vue')
+      },
+      {
+        path: '/providerdr',
+        name: 'Providerdr',
+        component: () => import('../views/ProviderDr.vue')
+      },
+      {
+        path: '/ProviderPharm',
+        name: 'ProviderPharm',
+        component: () => import('../views/ProviderPharm.vue')
+      },
+      {
         path: '/settings',
         name: 'settings',
         component: () => import('../views/settings.vue')
@@ -48,34 +63,78 @@ const routes = [
       {
         path: '/doctors',
         name: 'doctors',
-        component: () => import('../components/Userspecific/doctors.vue')
+        component: () => import('../components/Userspecific/patientview/doctors.vue')
+      },
+      {
+        path: '/doctors1',
+        name: 'doctors1',
+        component: () => import('../components/Userspecific/Doctors/provider/doctors.vue')
+      },
+      {
+        path: '/doctors2',
+        name: 'doctors2',
+        component: () => import('../components/Userspecific/Pharmacists/provider/doctors.vue')
       },
       {
          path: '/pharmacists',
          name: 'pharmacists',
-         component: () => import('../components/Userspecific/pharmacists.vue')
+         component: () => import('../components/Userspecific/patientview/pharmacists.vue')
       },
+      {
+        path: '/pharmacists1',
+        name: 'pharmacists1',
+        component: () => import('../components/Userspecific/Doctors/provider/pharmacists.vue')
+     },
+     {
+      path: '/pharmacists2',
+      name: 'pharmacists2',
+      component: () => import('../components/Userspecific/Pharmacists/provider/pharmacists.vue')
+   },
       {
         path: '/doctorprofile',
         name: 'doctorprofile',
-        component: () => import('../components/Userspecific/doctorprofile.vue')
+        component: () => import('../components/Userspecific/patientview/doctorprofile.vue')
       },
       {
         path: '/pharmacistprofile',
         name: 'pharmacistprofile',
-        component: () => import('../components/Userspecific/pharmacistprofile.vue')
-      },        
+        component: () => import('../components/Userspecific/patientview/pharmacistprofile.vue')
+      },  
+      {
+        path: '/doctorprofile1',
+        name: 'doctorprofile1',
+        component: () => import('../components/Userspecific/Doctors/provider/doctorprofile.vue')
+      },      
+      {
+        path: '/doctorprofile2',
+        name: 'doctorprofile2',
+        component: () => import('../components/Userspecific/Pharmacists/provider/doctorprofile.vue')
+      },
+      {
+        path: '/pharmacistprofile1',
+        name: 'pharmacistprofile1',
+        component: () => import('../components/Userspecific/Doctors/provider/pharmacistprofile.vue')
+      },      
+      {
+        path: '/pharmacistprofile2',
+        name: 'pharmacistprofile2',
+        component: () => import('../components/Userspecific/Pharmacists/provider/pharmacistprofile.vue')
+      },    
       {
         path: '/transactionhistory',
         name: 'transactionhistory',
         component: () => import('../components/Userspecific/transactionhistory.vue')
       },  
       {
-        path: '/patients',
-        name: 'patients',
-        component: () => import('../components/Userspecific/patients.vue')
+        path: '/drpatients',
+        name: 'drpatients',
+        component: () => import('../components/Userspecific/Doctors/drpatients.vue')
       },    
- 
+      {
+        path: '/rphpatients',
+        name: 'rphpatients',
+        component: () => import('../components/Userspecific/Pharmacists/rphpatients.vue')
+      },    
     ], 
   },
   {

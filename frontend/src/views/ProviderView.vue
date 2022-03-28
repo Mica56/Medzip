@@ -18,8 +18,10 @@
             <a class="nav-link" aria-current="page"><router-link style="text-decoration: none; color: inherit;" to="/home">Home</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/about">About</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/patients">Patients</router-link></a>
+            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providerdr">Providers dr</router-link></a>
+            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/ProviderPharm">Providers pharm</router-link></a>
+            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/drpatients">Patients dr</router-link></a>
+            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/rphpatients">Patients pharm</router-link></a>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Provider User ID 
             </a>
