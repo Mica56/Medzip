@@ -13,7 +13,7 @@
       <div class="card-body">
         <h5 class="card-title">Doctors</h5>
                 <p class="card-text">Coordinate with physicians from different specializations.</p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+       <a class="btn btn-primary"><router-link style="text-decoration: none; color: inherit;" to="/doctors">Contact one here</router-link></a>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
       <div class="card-body">
         <h5 class="card-title">Pharmacists</h5>
         <p class="card-text">Coordinate with Pharmacists for pharmacologic therapy to share. </p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+        <a class="btn btn-primary "><router-link style="text-decoration: none; color: inherit;" to="/pharmacists">Contact one here</router-link></a>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
       <div class="card-body">
         <h5 class="card-title">Nurses</h5>
         <p class="card-text">Coordinate with nurses for medical care and home care. </p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+        <a href="#" class="btn btn-primary disabled">Contact one here</a>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
       <div class="card-body">
         <h5 class="card-title">Radio Technologists</h5>
         <p class="card-text">Coordinate with  Radio technologists for diganostic imaging to share.</p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+        <a href="#" class="btn btn-primary disabled">Contact one here</a>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
       <div class="card-body">
         <h5 class="card-title">Medical Technologists</h5>
         <p class="card-text">Coordinate with  Medical technologists for laboratory informations.</p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+       <a href="#" class="btn btn-primary disabled">Contact one here</a>
       </div>
     </div>
   </div>  
@@ -63,7 +63,7 @@
       <div class="card-body">
         <h5 class="card-title">Dentists</h5>
         <p class="card-text">Coordinate with Dentists for prevention, diagnosis, and treatment on dental care.</p>
-        <a href="#" class="btn btn-primary disabled">Log in to contact one</a>
+       <a href="#" class="btn btn-primary disabled">Contact one here</a>
       </div>
     </div>
   </div>

@@ -17,17 +17,17 @@
             <a class="nav-link" aria-current="page"><router-link style="text-decoration: none; color: inherit;" to="/home">Home</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/about">About</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>
+            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providerpatient">Providers</router-link></a>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Patient User ID
             </a>
             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink" dropdown-menu-lg-end>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/profile">Profile Information</router-link></a></li>
-              <li><a class="dropdown-item disabled" href="#" >Smart Contracts</a></li>
-              <li><a class="dropdown-item" href="#">Transaction History</a></li> 
+              <li><a class="dropdown-item disabled " href="#">Smart Contracts</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/transactionHistory">Transaction History</router-link></a></li>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/settings">Settings</router-link></a></li>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/default">Logout</router-link></a></li>
-            </ul>
+             </ul>
           </ul>
         </div>
       </div>

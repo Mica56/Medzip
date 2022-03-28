@@ -1,10 +1,10 @@
 <template>
 
-<div class="modal fade" id="Doctorresponse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Pharmacistresponse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="Doctorresponse">Modal title</h5>
+<h5 class="modal-title" id="Pharmacistresponse">Pharmacist response</h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
@@ -38,20 +38,12 @@
   <label for="Requests" class="form-label"> Requests: </label>
     <div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1">Medical certifcate</label>
-        <div class="mb-3">
-          <label for="formFile" class="form-label">Attach Medical certifcate</label>
-          <input class="form-control" type="file" id="formFile" required>
-        </div>
-    </div>
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">E-prescripiton</label>
-    <div class="mb-3">
-              <label for="formFile" class="form-label">Attach E-prescripiton</label>
+      <label class="form-check-label" for="inlineCheckbox1">Medical Order</label>
+  <div class="mb-3">
+              <label for="formFile" class="form-label">Attach File</label>
               <input class="form-control" type="file" id="formFile" required>
               </div>
-</div>
+    </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
   <label class="form-check-label" for="inlineCheckbox2">Others</label>
@@ -76,9 +68,10 @@
 
 </template>
 
+
 <script>
 export default {
-    name: 'Doctorresponse',
+    name: 'Pharmacistresponse',
   components: {
     
   },
