@@ -35,20 +35,25 @@ const routes = [
         component: () => import('../views/Providers.vue')
       },
       {
-        path: '/providerpatient',
-        name: 'Providerpatient',
-        component: () => import('../views/ProviderPatient.vue')
+        path: '/patients',
+        name: 'Patients',
+        component: () => import('../views/Patients.vue')
       },
-      {
-        path: '/providerdr',
-        name: 'Providerdr',
-        component: () => import('../views/ProviderDr.vue')
-      },
-      {
-        path: '/ProviderPharm',
-        name: 'ProviderPharm',
-        component: () => import('../views/ProviderPharm.vue')
-      },
+      // {
+      //   path: '/providerpatient',
+      //   name: 'Providerpatient',
+      //   component: () => import('../views/ProviderPatient.vue')
+      // },
+      // {
+      //   path: '/providerdr',
+      //   name: 'Providerdr',
+      //   component: () => import('../views/ProviderDr.vue')
+      // },
+      // {
+      //   path: '/ProviderPharm',
+      //   name: 'ProviderPharm',
+      //   component: () => import('../views/ProviderPharm.vue')
+      // },
       {
         path: '/settings',
         name: 'settings',

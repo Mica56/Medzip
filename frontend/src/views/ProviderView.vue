@@ -18,14 +18,25 @@
             <a class="nav-link" aria-current="page"><router-link style="text-decoration: none; color: inherit;" to="/home">Home</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/about">About</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providerdr">Providers dr</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/ProviderPharm">Providers pharm</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/drpatients">Patients dr</router-link></a>
-            <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/rphpatients">Patients pharm</router-link></a>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Providers
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink2" dropdown-menu-lg-end>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/providers">Partner Providers</router-link></a></li>
+              <li><a class="dropdown-item disabled " href="#">Partner Requests</a></li>
+              <li><a class="dropdown-item disabled " href="#">Other Providers</a></li>
+            </ul>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Patients
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink3" dropdown-menu-lg-end>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/patients">Patients</router-link></a></li>
+              <li><a class="dropdown-item disabled " href="#">Patients Requests</a></li>
+            </ul>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Provider User ID 
             </a>
-            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink" dropdown-menu-lg-end>
+            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink1" dropdown-menu-lg-end>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/profile">Profile Information</router-link></a></li>
               <li><a class="dropdown-item disabled " href="#">Smart Contracts</a></li>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/transactionHistory">Transaction History</router-link></a></li>
