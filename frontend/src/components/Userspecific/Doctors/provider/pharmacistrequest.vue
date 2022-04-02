@@ -8,9 +8,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       
+        
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <label for="exampleFormControlInput1" class="form-label">Patient Name</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Firstname Lastname">
 </div>
 <div class="mb-3">
@@ -24,7 +24,11 @@
 </div>
 
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Reason for consultation</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Reason recommendation</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Findings</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
@@ -37,22 +41,7 @@
   <option value="3">Three</option>
 </select>
 </div>
-       <div class="mb-3">
-          <label for="formFile" class="form-label">Attach Prescription</label>
-          <input class="form-control" type="file" id="formFile" required>
-        </div>
-<div>
-      <label for="Sessions" class="form-label">Sessions:</label>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">First Session</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">  <label class="form-check-label" for="inlineCheckbox2">Returning session </label>
-</label>
-</div>
-</div>
+
 
 <div>
       <label for="Requests" class="form-label"> Requests: </label>
