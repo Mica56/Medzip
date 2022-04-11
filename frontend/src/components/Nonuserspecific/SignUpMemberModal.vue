@@ -1,5 +1,5 @@
 <template>
-
+<div>
 <div class="modal fade" id="SUMModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -87,7 +87,7 @@
         <div class="modal-footer">
 <div class="col-auto">
      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Signup3"> Return</button>
-    <button type="submit" class="btn btn-primary ">Submit</button>
+    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Submit</button>
   </div>
    </div>
     </div>
@@ -95,6 +95,7 @@
   </div>
 </div>
 <Signup3> </Signup3>
+</div>
 </template>
 
 <script>

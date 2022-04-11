@@ -18,14 +18,14 @@
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/about">About</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/partners">Partner Company</router-link></a>
             <a class="nav-link"><router-link style="text-decoration: none; color: inherit;" to="/providers">Providers</router-link></a>
-            <button class="btn btn-outline-primary me-2" type="button"  data-bs-toggle="modal" data-bs-target="#LoginModals" >Login</button>
+            <button class="btn btn-outline-primary me-2" type="button"  data-bs-toggle="modal" data-bs-target="#LoginModals" @click="showModal" >Login</button>
 
           </ul>
         </div>
       </div>
     </nav>
      <!-- LoginModals -->
-    <LoginModals></LoginModals>
+    <LoginModals v-show="isModalVisible" @close="closeModal"></LoginModals>
     <section>
       <router-view/>
     </section>

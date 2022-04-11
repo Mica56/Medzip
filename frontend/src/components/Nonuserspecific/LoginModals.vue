@@ -57,9 +57,6 @@ export default {
     };
   },
   methods: {
-    close() {
-      this.$emit('close');
-    },
     setLoginType(key){
       this.loginType = key;
       this.$emit("selectedUser", this.loginType);

@@ -28,14 +28,13 @@ export default {
   
   data() {
       return {
-        loginType: 'default'
+        loginType: 'default',
       };
     },
   methods: {
     capturedMessage(value){
       this.loginType = value;
     },
-    
   },
   computed: {
     isProvider(){
@@ -44,7 +43,8 @@ export default {
     isPatient() {
       return this.loginType === 'patient'
     }
-  }
+  },
+   
 }
 
 </script>

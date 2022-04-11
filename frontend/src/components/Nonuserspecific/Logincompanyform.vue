@@ -63,7 +63,7 @@
             </form>
       <div class="modal-footer">
 <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    <button type="submit" @click="$emit('close')" class="btn btn-primary mb-3">Submit</button>
   </div>
       </div>
     </div>
