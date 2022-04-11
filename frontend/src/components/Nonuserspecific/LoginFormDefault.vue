@@ -44,8 +44,8 @@
             </div>          
           </form>
       <div class="modal-footer">
-<div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" data-bs-dismiss="modal" aria-label="Close">Submit</button>
   </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 <template>
+<div>
 <div class="modal fade" id="SignupmodalsCompany" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">          
@@ -83,6 +84,7 @@
 </div>
 </div>
 <Signup3> </Signup3>
+</div>
 </template>
 
 <script>
