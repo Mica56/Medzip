@@ -66,7 +66,7 @@ export default {
 				this.accountDetails = res.data
 			})  
 	}
-  
+
 }
 
 </script>
