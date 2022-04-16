@@ -106,17 +106,39 @@ export default {
   components: { Signup3,
     // LoginForm
   },
-  methods: {
-    close() {
-      this.$emit('close');
-    },
-    // showModal() {
-    //     this.isModalVisible = true;
-    // },
-    // closeModal() {
-    //   this.isModalVisible = false;
-    // }
-  },
+  // data () {
+  //   return {
+  //     form: {
+  //       full_name: '',
+  //       email: '',
+  //       password: '',
+  //       user_type: "Patient",
+  //       contact_no: '',
+  //       birthday: '',
+  //       sex: '',
+  //       pronouns: '',
+  //       provider_type: 'N/A',
+  //       prc_num: 'N/A',
+  //       prc_pic_url: 'N/A'
+  //     },
+  //     isErrored: false,
+  //   }
+  // },
+  
+  // methods: {
+  //   submitForm () {
+  //     // let headers = {Authorization: 'Token' + localStorage.get('Token')};
+  //     console.log(this.email);
+  //     //127.0.0.1:8000/authentication/
+  //     axios.post('http://127.0.0.1:8000/account/create', this.form)
+  //     .then(res => {
+  //         localStorage.setItem('Token', res['Token'])
+  //     }).catch(err => {
+  //         this.isErrored = true
+  //         console.error(err)
+  //     })
+  //   }
+  // },
 }
 </script>
 

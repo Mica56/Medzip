@@ -10,6 +10,7 @@
       </div>
             <form class="row g-3 needs-validation" novalidate>
             <div class="mb-3">
+              <!-- v-model="form.email" -->
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 <div class="invalid-feedback">
@@ -115,6 +116,7 @@
 
 <script>
 import Signup3 from './signup3.vue'
+import axios from 'axios'
 
 
 export default {
@@ -122,6 +124,39 @@ export default {
   components: { Signup3,
     // LoginForm 
   },
+  // data () {
+  //   return {
+  //     form: {
+  //       full_name: '',
+  //       email: '',
+  //       password: '',
+  //       user_type: "Provider",
+  //       contact_no: '',
+  //       birthday: '',
+  //       sex: '',
+  //       pronouns: '',
+  //       provider_type: '',
+  //       prc_num: '',
+  //       prc_pic_url: ''
+  //     },
+  //     isErrored: false,
+  //   }
+  // },
+  
+  // methods: {
+  //   submitForm () {
+  //     // let headers = {Authorization: 'Token' + localStorage.get('Token')};
+  //     console.log(this.email);
+  //     //127.0.0.1:8000/authentication/
+  //     axios.post('http://127.0.0.1:8000/account/create', this.form)
+  //     .then(res => {
+  //         localStorage.setItem('Token', res['Token'])
+  //     }).catch(err => {
+  //         this.isErrored = true
+  //         console.error(err)
+  //     })
+  //   }
+  // },
 }
 </script>
 

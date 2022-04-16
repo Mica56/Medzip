@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{accountDetails}}
     <Login @selectedUser="capturedMessage" />
   
     <template v-if="isProvider">
@@ -19,6 +20,7 @@
 
 <script>
 import Login from './components/Nonuserspecific/LoginModals.vue'
+import axios from 'axios'
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
   data() {
       return {
         loginType: 'default',
+        accountDetails: [],
       };
     },
   methods: {
@@ -44,7 +47,26 @@ export default {
       return this.loginType === 'patient'
     }
   },
-   
+   created () {
+    //  let headers = {'Authorization': 'Token' + localStorage.get('Token')};
+
+		axios.get('https://jirroreo.pythonanywhere.com/account/1/profile',
+      {
+        params: {
+          username: "orij", 
+          password: "happy",
+        },
+        headers: {
+          Authorization: 'Bearer ${token}',
+          "Content-Type": "application/json",
+        },
+      }
+      )
+			.then(res => {
+				this.accountDetails = res.data
+			})  
+	}
+
 }
 
 </script>
