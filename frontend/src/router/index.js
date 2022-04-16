@@ -12,12 +12,12 @@ const routes = [
       patient: PatientView,
     },
     children: [
-      {
+        {
         path: '',
         name: 'Home',
         component: () => import('../views/Home.vue'),
         alias: '/home'
-      },
+       },
       {
         path: '/about',
         name: 'About',
@@ -61,9 +61,14 @@ const routes = [
       },
       
       {
-        path: '/profile',
-        name: 'profile',
-        component: () => import('../components/Userspecific/profile.vue')
+        path: '/patientprof',
+        name: 'patientprof',
+        component: () => import('../components/Userspecific/Patientprofile.vue')
+      },
+      {
+        path: '/providerprof',
+        name: 'providerprof',
+        component: () => import('../components/Userspecific/Providerprofile.vue')
       },
       {
         path: '/doctors',
@@ -142,12 +147,11 @@ const routes = [
       },    
     ], 
   },
-  {
+  { 
     path: '/default',
     name: 'Default',
     component: MainView
   },
-
 ]
 
 const router = createRouter({

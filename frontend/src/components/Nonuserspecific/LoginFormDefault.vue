@@ -15,7 +15,7 @@
 
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  <input v-model="email" type="Email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" required>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   <div class="invalid-feedback">
                     Please provide a valid Email.
@@ -24,7 +24,7 @@
               
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="password" required >
+                    <input v-model="password" type="Password" class="form-control" id="exampleInputPassword1" placeholder="Password" aria-describedby="password" required >
                   <div class="invalid-feedback">
                   Please provide a valid Password.
                   </div>
@@ -45,7 +45,7 @@
           </form>
       <div class="modal-footer">
   <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+    <button type="submit" class="btn btn-primary mb-3" data-bs-dismiss="modal" aria-label="Close" @click="checkCreds">Submit</button>
   </div>
       </div>
     </div>
@@ -66,14 +66,47 @@ import LoginModals from './LoginModals.vue'
 import LIFSeedP from './LogInFormSeed.vue'
 import Signup3 from './signup3.vue'
 import LogInUN from './LoginUNform.vue'
+import axios from 'axios'
+
 export default {
   name: 'LoginFormDef',
   components: { LIFSeedP, Signup3, LogInUN, LoginModals,
     
   },
+  data () {
+    return {
+      // 'orij@jirroreo.dev' or 'orij' 
+      // 'happy'
+      email: '',
+      password: '',
+      token: '',
+      isErrored: false,
+    }
+  },
   
+  methods: {
+    checkCreds () {
+      // let headers = {Authorization: 'Token' + localStorage.get('Token')};
+      console.log(this.email);
+      //127.0.0.1:8000/authentication/
+      axios.post('http://127.0.0.1:8000/authentication/', 
+      {
+        username: this.email,
+        password: this.password,
+      }).then(res => {
+          this.token = localStorage.setItem('Token', res['Token'])
+      }).catch(err => {
+          this.isErrored = true
+          console.error(err)
+      })
+      console.log(this.token);
+    }
+  },
 }
 </script>
 
 <style>
+.form-control:valid {
+  background-color:  #96d3ec!important;
+}
 </style>

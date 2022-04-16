@@ -10,13 +10,13 @@
       </div>
              <form class="row g-3 needs-validation" novalidate>
     <div class="mb-3">
-                <input type="Unique Account Identification" class="form-control" id="exampleInputUAI1" placeholder="Unique Account Identification" required>
+                <input v-model="username" type="Unique Account Identification" class="form-control" id="exampleInputUAI1" placeholder="Unique Account Identification" required>
                <div class="invalid-feedback">
       Please provide a valid Unique Account Identification.
     </div>
      </div>
              <div class="mb-3">
-                <input type="Password" class="form-control" id="examplePassword1" placeholder="Password" required>
+                <input v-model="password" type="Password" class="form-control" id="examplePassword2" placeholder="Password" aria-describedby="password" required>
                 <div class="invalid-feedback">
       Please provide a valid Password.
     </div>
@@ -31,7 +31,7 @@
             </form>
       <div class="modal-footer">
         <div class="col-auto">
-           <button type="submit" class="btn btn-primary mb-3">Submit</button>
+           <button type="submit" class="btn btn-primary mb-3" data-bs-dismiss="modal" aria-label="Close" @click="checkCreds">Submit</button>
         </div>
       </div>
     </div>
@@ -51,11 +51,39 @@ import LoginFormDef from './LoginFormDefault.vue'
 import LIFSeedP from './LogInFormSeed.vue'
 import Signup3 from './signup3.vue'
 import LoginModals from './LoginModals.vue'
+import axios from 'axios'
 
 export default {
     name: 'LogInUN',
   components: {
     LoginFormDef, LIFSeedP, Signup3, LoginModals,
+  },
+  data () {
+    return {
+      // 'orij' 
+      // 'happy'
+      username: '',
+      password: '',
+      isErrored: false,
+    }
+  },
+  
+  methods: {
+    checkCreds () {
+      // let headers = {Authorization: 'Token' + localStorage.get('Token')};
+      console.log(this.username);
+      //127.0.0.1:8000/authentication/
+      axios.post('http://127.0.0.1:8000/authentication/', 
+      {
+        username: this.username,
+        password: this.password,
+      }).then(res => {
+          localStorage.setItem('Token', res['Token'])
+      }).catch(err => {
+          this.isErrored = true
+          console.error(err)
+      })
+    }
   },
 }
 </script>

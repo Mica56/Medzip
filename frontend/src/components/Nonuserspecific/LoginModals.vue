@@ -61,15 +61,9 @@ export default {
       this.loginType = key;
       this.$emit("selectedUser", this.loginType);
     },
-
-    // showModal() {
-    //     this.isModalVisible = true;
-    // },
-    // closeModal() {
-    //   this.isModalVisible = false;
-    // }
-
+  
   },
+
 }
 </script>
 
