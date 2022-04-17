@@ -39,21 +39,21 @@ const routes = [
         name: 'Patients',
         component: () => import('../views/Patients.vue')
       },
-      // {
-      //   path: '/providerpatient',
-      //   name: 'Providerpatient',
-      //   component: () => import('../views/ProviderPatient.vue')
-      // },
-      // {
-      //   path: '/providerdr',
-      //   name: 'Providerdr',
-      //   component: () => import('../views/ProviderDr.vue')
-      // },
-      // {
-      //   path: '/ProviderPharm',
-      //   name: 'ProviderPharm',
-      //   component: () => import('../views/ProviderPharm.vue')
-      // },
+       {
+        path: '/providerpatient',
+        name: 'Providerpatient',
+         component: () => import('../views/ProviderPatient.vue')
+       },
+       {
+         path: '/providerdr',
+        name: 'Providerdr',
+        component: () => import('../views/ProviderDr.vue')
+       },
+       {
+         path: '/ProviderPharm',
+         name: 'ProviderPharm',
+        component: () => import('../views/ProviderPharm.vue')
+        },
       {
         path: '/settings',
         name: 'settings',
@@ -130,6 +130,11 @@ const routes = [
         name: 'pharmacistprofile2',
         component: () => import('../components/Userspecific/Pharmacists/provider/pharmacistprofile.vue')
       },    
+      {
+        path: '/patientresponse',
+        name: 'patientresponse',
+        component: () => import('../components/Userspecific/patientview/response/patientresponse.vue')
+     },
       {
         path: '/transactionhistory',
         name: 'transactionhistory',

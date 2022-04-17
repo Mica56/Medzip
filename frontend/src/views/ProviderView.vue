@@ -25,13 +25,18 @@
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/providers">Partner Providers</router-link></a></li>
               <li><a class="dropdown-item disabled " href="#">Partner Requests</a></li>
               <li><a class="dropdown-item disabled " href="#">Other Providers</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/providerdr">Providers doctor viewr</router-link></a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/ProviderPharm">Providers pharmacist view</router-link></a></li>
             </ul>
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Patients
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink3" dropdown-menu-lg-end>
-              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/patients">Patients</router-link></a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/patients">All Patients</router-link></a></li>
               <li><a class="dropdown-item disabled " href="#">Patients Requests</a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/drpatients">Patients doctor viewr</router-link></a></li>
+              <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/rphpatients">Patients pharmacist view</router-link></a></li>
+
             </ul>
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Provider User ID 

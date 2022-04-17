@@ -36,23 +36,17 @@
 import General from "../components/Userspecific/accountgeneral.vue"
 import ChangePassword from "../components/Userspecific/accountchangepw.vue"
 import Info from "../components/Userspecific/accountinfo.vue"
-import SocialLinks from "../components/Userspecific/accountsociallink.vue"
-import Connections from "../components/Userspecific/accountconnection.vue"
-import Notifications from "../components/Userspecific/accoutnotif.vue"
 
 export default {
   name: 'settings',
   components: {
     General,
     ChangePassword,
-    Info,
-    SocialLinks,
-    Connections,
-    Notifications
+    Info
   },
   data: function() {
     return {
-      tabs: ["General", "ChangePassword", "Info", "SocialLinks", "Connections", "Notifications"],  
+      tabs: ["General", "ChangePassword", "Info",],  
       selected: "General"    
     };
   },
