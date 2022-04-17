@@ -67,6 +67,7 @@ import LIFSeedP from './LogInFormSeed.vue'
 import Signup3 from './signup3.vue'
 import LogInUN from './LoginUNform.vue'
 import axios from 'axios'
+// import { EventBus } from '../../main'
 
 export default {
   name: 'LoginFormDef',
@@ -86,7 +87,6 @@ export default {
   
   methods: {
     checkCreds () {
-      // let headers = {Authorization: 'Token' + localStorage.get('Token')};
       console.log(this.email);
       //127.0.0.1:8000/authentication/
       axios.post('http://127.0.0.1:8000/authentication/', 
@@ -94,12 +94,15 @@ export default {
         username: this.email,
         password: this.password,
       }).then(res => {
-          this.token = localStorage.setItem('Token', res['Token'])
+          localStorage.setItem('Token', res['Token']);
+          this.token = res.data.token;
+          console.log(this.token);
+          // EventBus.$emit("UserToken", this.token);
+          this.$emit('UserToken', this.token);
       }).catch(err => {
           this.isErrored = true
           console.error(err)
-      })
-      console.log(this.token);
+      });
     }
   },
 }

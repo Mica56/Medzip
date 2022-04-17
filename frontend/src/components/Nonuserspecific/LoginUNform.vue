@@ -64,13 +64,13 @@ export default {
       // 'happy'
       username: '',
       password: '',
+      token: '',
       isErrored: false,
     }
   },
   
   methods: {
     checkCreds () {
-      // let headers = {Authorization: 'Token' + localStorage.get('Token')};
       console.log(this.username);
       //127.0.0.1:8000/authentication/
       axios.post('http://127.0.0.1:8000/authentication/', 
@@ -78,11 +78,14 @@ export default {
         username: this.username,
         password: this.password,
       }).then(res => {
-          localStorage.setItem('Token', res['Token'])
+          localStorage.setItem('Token', res['Token']);
+          this.token = res.data.token;
+          // console.log(this.token);
+          this.$emit("UserToken", this.token);
       }).catch(err => {
           this.isErrored = true
           console.error(err)
-      })
+      });
     }
   },
 }
