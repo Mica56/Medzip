@@ -42,11 +42,11 @@ export default {
   components: {
     General,
     ChangePassword,
-    Info
+    Info,
   },
   data: function() {
     return {
-      tabs: ["General", "ChangePassword", "Info",],  
+      tabs: ["General", "ChangePassword", "Info"],  
       selected: "General"    
     };
   },

@@ -127,7 +127,9 @@ export default {
   // data () {
   //   return {
   //     form: {
-  //       full_name: '',
+  //       first_name: '',
+        // last_name: '',
+        // username: '',
   //       email: '',
   //       password: '',
   //       user_type: "Provider",
@@ -150,7 +152,8 @@ export default {
   //     //127.0.0.1:8000/authentication/
   //     axios.post('http://127.0.0.1:8000/account/create', this.form)
   //     .then(res => {
-  //         localStorage.setItem('Token', res['Token'])
+  //         localStorage.setItem('Token', res['Token']);
+            // console.log(res);
   //     }).catch(err => {
   //         this.isErrored = true
   //         console.error(err)

@@ -64,25 +64,43 @@ export default {
       // 'happy'
       username: '',
       password: '',
+      token: '',
       isErrored: false,
     }
   },
   
   methods: {
     checkCreds () {
-      // let headers = {Authorization: 'Token' + localStorage.get('Token')};
-      console.log(this.username);
+      console.log(this.email);
       //127.0.0.1:8000/authentication/
       axios.post('http://127.0.0.1:8000/authentication/', 
       {
         username: this.username,
         password: this.password,
       }).then(res => {
-          localStorage.setItem('Token', res['Token'])
+          localStorage.setItem('Token', res['Token']);
+          this.token = res.data.token;
+          console.log(this.token);
+          this.$emit("UserToken", this.token);
+
+          const AuthStr = 'Token '.concat(this.token);
+          // console.log(this.AuthStr);
+          try {
+            axios.get('http://127.0.0.1:8000/account/1/profile',
+          { headers: { Authorization: AuthStr } })
+          .then(response => {
+              // If request is good...
+              console.log(response.data);
+            })
+          } catch (error) {
+            console.log(error);
+          }        
       }).catch(err => {
           this.isErrored = true
           console.error(err)
-      })
+      }).finally(() => {
+        console.log('this will always be called');
+      });
     }
   },
 }
