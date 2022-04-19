@@ -73,7 +73,13 @@
     </div>
     </div>
              <div class="mb-3">
-                <input v-model="form.password" type="Password" class="form-control" id="exampleInputPpassword" placeholder="Password" required>
+                <input v-model="form.password" type="Password" class="form-control" id="exampleInputPpassword" aria-describedby="PwHelp" placeholder="Password" required>
+                <div id="PwHelp" class="form-text">
+                  Your password can’t be too similar to your other personal information.<br/>
+                  Your password must contain at least 8 characters.<br/>
+                  Your password can’t be a commonly used password.<br/>
+                  Your password can’t be entirely numeric.
+                </div>
                 <div class="invalid-feedback">
       Please type a password.
     </div>
@@ -118,7 +124,6 @@ export default {
       form: {
         first_name: '',
         last_name: '',
-        username: '',
         email: '',
         password: '',
         user_type: "Patient",
@@ -126,6 +131,7 @@ export default {
         birthday: '',
         sex: '',
         pronouns: '',
+        seed_phrase: 'random string'
       },
       isErrored: false,
       catchederror: '',
@@ -140,7 +146,6 @@ export default {
       this.form.pronouns = key;
     },
     submitForm () {
-      this.form.username = this.form.first_name+'pat';
       console.log(this.form);
 
       try {
