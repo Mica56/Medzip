@@ -1,10 +1,8 @@
 <template>
   <div>
     {{accountDetails}}
-    {{ token }}
 
     <Login @selectedUser="capturedMessage" />
-    <LoginFormDefault @UserToken="capturedToken" />
   
     <template v-if="isProvider">
       <router-view name="provider"/>
@@ -25,7 +23,6 @@
 import Login from './components/Nonuserspecific/LoginModals.vue'
 import LoginFormDefault from './components/Nonuserspecific/LoginFormDefault.vue'
 import axios from 'axios'
-// import {EventBus}  from './main'
 
 export default {
   name: 'App',
@@ -44,10 +41,6 @@ export default {
   methods: {
     capturedMessage(value){
       this.loginType = value;
-    },
-    capturedToken(tok){
-      console.log(tok);
-      this.token = tok;
     },
   },
   computed: {
