@@ -35,13 +35,10 @@ Next, on your terminal do the following:</br>
 ```
  pip install pipenv
 ```
-- Activate the virtual environment and install the ff. [django](https://docs.djangoproject.com/en/4.0/) dependencies</br>
+- On MedZipBackend root folder, activate the virtual environment and install the ff. [django](https://docs.djangoproject.com/en/4.0/) dependencies</br>
 ```
  pipenv shell
- pip install django
- pip install django-rest-framework
- pip install django-cors-headers
- pip install djoser
+ pip install -r requirements.txt
 ```
 ### To run the frontend app, on your terminal you type and enter:</br>
 ```
@@ -49,13 +46,12 @@ Next, on your terminal do the following:</br>
  yarn serve
 ```
 > Then, click either 'Local' or 'Network' running link.</br>
-### To run the backend app, on your terminal, activate the virtual environment then type and enter:</br>
+### To run the backend app/server, on your terminal, activate the virtual environment then type and enter (clone the backend app from this repo: https://github.com/JirroReo/MedZipBackend):</br>
 ```
  pipenv shell
- cd backend
  python manage.py runserver
 ```
-> Then, click Starting development server link. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link</br>
+> Then, click Starting development server link if you want to check backend details. (Note: There is no django site interface yet so just access the admin controls for the time being. Put '/admin' at the end of the server link</br>
 
 # FAQS:
 
