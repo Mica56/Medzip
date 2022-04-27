@@ -35,8 +35,8 @@
                 </div>
                 <div class="options text-center text-md-right mt-1">
                   <p> Wrong account type? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LoginModals" >Choose account type</button></p>
-                                <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LIFSeedP" >Seed Phrase</button></p>
-                          <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LogInUN" >User Name </button></p>
+                                <!-- <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LIFSeedP" >Seed Phrase</button></p>
+                          <p> Log In Using  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#LogInUN" >User Name </button></p> -->
                     <p>Not a member? <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Signup3" >Sign Up</button></p>
                     <p>Forgot <a href="#" class="blue-text">Password?</a></p>
                 </div>
@@ -81,12 +81,13 @@ export default {
       password: '',
       token: '0',
       isErrored: false,
+      accountDetails: [],
+      id: ''
     }
   },
   
   methods: {
     checkCreds () {
-      console.log(this.email);
       //127.0.0.1:8000/authentication/
       axios.post('http://127.0.0.1:8000/authentication/', 
       {
@@ -95,10 +96,8 @@ export default {
       }).then(res => {
           localStorage.setItem('Token', res['Token']);
           this.token = res.data.token;
-          this.$emit("UserToken", this.token);
 
           const AuthStr = 'Token '.concat(this.token);
-          // console.log(this.AuthStr);
           let config = {
              headers: { Authorization: AuthStr },
              params: {
@@ -109,11 +108,27 @@ export default {
           try {
             axios.get('http://127.0.0.1:8000/account/user', config)
           .then(response => {
-              console.log(response.data);
+              this.accountDetails = response.data;
+              console.log(this.accountDetails);
+              this.id = response.data[0].id;
+              console.log(this.id);
+              // have to pass accountDetails to parent
+              this.$emit("AccountDetails", this.accountDetails);
             })
           } catch (error) {
             console.log(error);
-          }        
+          };
+          //this is just a test to fetch request details
+          // let reqconfig = {
+          //   headers: { Authorization: AuthStr },
+          //   query_params: {
+          //     accid: this.id
+          //   }
+          // };
+          //  axios.get('http://127.0.0.1:8000/request/details', reqconfig)
+          // .then(response => {
+          //     console.log(response.data);
+          //   })        
       }).catch(err => {
           this.isErrored = true
           console.error(err)

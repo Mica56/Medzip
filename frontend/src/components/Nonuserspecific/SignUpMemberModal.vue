@@ -39,21 +39,21 @@
                <div class="invalid-feedback">
       Please provide a valid Date of birth.
     </div>
-            </div>
-             <div class="mb-3">
-                    <label for="Sex" class="form-label">Sex assigned from birth : </label>
-<div class="form-check form-check-inline">
-  <input @click="setSex('F')" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-  <label class="form-check-label" for="inlineCheckbox1">female</label>
-</div>
-<div class="form-check form-check-inline">
-  <input @click="setSex('M')" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-  <label class="form-check-label" for="inlineCheckbox2">Male</label>
-</div>
-                <div class="invalid-feedback">
-      Please provide a valid sex.
     </div>
-    </div>
+      <div class="mb-3">
+      <label for="Sex" class="form-label">Sex assigned from birth : </label>
+      <div class="form-check form-check-inline">
+        <input @click="setSex('F')" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">female</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input @click="setSex('M')" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Male</label>
+      </div>
+        <div class="invalid-feedback">
+          Please provide a valid sex.
+        </div>
+      </div>
             <div class="mb-3">
                     <label for="Pronouns" class="form-label">Pronouns : </label>
 <div class="form-check form-check-inline">
