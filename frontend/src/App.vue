@@ -1,8 +1,10 @@
 <template>
   <div>
-    {{accountDetails}}
-
     <Login @selectedUser="capturedMessage" />
+    <LoginFormDefault @AccountDetails="getAccountDetails"/>
+    <!-- just to test if accountDetails was received by parent
+    but it seems it wasn't able to -->
+      {{accountDetails}}
   
     <template v-if="isProvider">
       <router-view name="provider"/>
@@ -42,6 +44,10 @@ export default {
     capturedMessage(value){
       this.loginType = value;
     },
+    getAccountDetails(details) {
+      this.accountDetails = details;
+      console.log(this.accountDetails);
+    }
   },
   computed: {
     isProvider(){
@@ -51,23 +57,6 @@ export default {
       return this.loginType === 'patient'
     }
   },
-  // created () {
-  //   // const AuthStr = 'Token '.concat(localStorage.getItem('token')); 
-  //   const AuthStr = 'Token e18211bed2b816e4a5e56f1afc77fd268b2467b3'; 
-  //     axios.get('https://jirroreo.pythonanywhere.com/account/i/profile/', 
-  //     { headers: { Authorization: AuthStr } })
-  //     .then(response => {
-  //         // If request is good...
-  //         console.log(response.data);
-  //       })
-  //     .catch((error) => {
-  //         console.log('error ' + error);
-  //       });
-	// 	// axios.get('https://jirroreo.pythonanywhere.com/account/i/profile/')
-	// 	// 	.then(res => {
-	// 	// 		this.accountDetails = res.data
-	// 	// 	})
-	// },
 
 }
 

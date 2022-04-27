@@ -76,7 +76,7 @@
 
                     <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">Provider Type</label>
-                    <select class="form-select" id="validationCustom04" required>
+                    <select v-model="form.provider_type" class="form-select" id="validationCustom04" required>
                       <option selected disabled value="">Choose...</option>
                       <option>Doctor</option>
                       <option>Pharmacist</option>
@@ -175,11 +175,16 @@ export default {
     setPronouns(key){
       this.form.pronouns = key;
     },
+    //have to save input #formfile to prc_pic_url as a URL
+    //this didn't work
     previewFiles(event) {
       console.log(event.target.files);
+      this.prc_pic_url = URL.createObjectURL(event.target.files[0]);
+      console.log(this.prc_pic_url);
     },
     submitForm () {
       console.log(this.form);
+      //undone the following comments once this.form prints out complete details
 
       // try {
       //   axios.post('http://127.0.0.1:8000/account/create', this.form,
