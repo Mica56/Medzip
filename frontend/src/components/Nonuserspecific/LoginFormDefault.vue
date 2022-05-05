@@ -152,9 +152,10 @@ export default {
           password: self.password,
         })
         .then((res) => {
-          localStorage.setItem("Token", res["Token"]);
           self.token = res.data.token;
-
+          localStorage.setItem("Token", self.token);
+          axios.defaults.headers.common["Authorization"] =
+            localStorage.getItem("Token");
           const AuthStr = "Token ".concat(self.token);
           let config = {
             headers: { Authorization: AuthStr },

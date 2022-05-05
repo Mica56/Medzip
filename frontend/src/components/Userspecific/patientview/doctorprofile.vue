@@ -13,10 +13,10 @@
                   width="150"
                 />
                 <div class="mt-3">
-                  <h4>John Doe</h4>
-                  <p class="text-secondary mb-1">Full Stack Developer</p>
+                  <h4>{{ user.full_name }}</h4>
+                  <p class="text-secondary mb-1">{{ user.user_type }}</p>
                   <p class="text-muted font-size-sm">
-                    Bay Area, San Francisco, CA
+                    <!-- Bay Area, San Francisco, CA -->
                   </p>
                   <button
                     type="button"
@@ -168,39 +168,39 @@
                 <div class="col-sm-3">
                   <h6 class="mb-0">Full Name</h6>
                 </div>
-                <div class="col-sm-9 text-secondary">Kenneth Valdez</div>
+                <div class="col-sm-9 text-secondary">{{ user.full_name }}</div>
               </div>
               <hr />
               <div class="row">
                 <div class="col-sm-3">
                   <h6 class="mb-0">Email</h6>
                 </div>
-                <div class="col-sm-9 text-secondary">fip@jukmuh.al</div>
+                <div class="col-sm-9 text-secondary">{{ user.email }}</div>
               </div>
               <hr />
               <div class="row">
                 <div class="col-sm-3">
                   <h6 class="mb-0">Phone</h6>
                 </div>
-                <div class="col-sm-9 text-secondary">(239) 816-9029</div>
+                <div class="col-sm-9 text-secondary">{{ user.contact_no }}</div>
               </div>
               <hr />
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-sm-3">
                   <h6 class="mb-0">Mobile</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">(320) 380-4539</div>
-              </div>
-              <hr />
-              <div class="row">
+              </div> -->
+              <!-- <hr /> -->
+              <!-- <div class="row">
                 <div class="col-sm-3">
                   <h6 class="mb-0">Address</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
                   Bay Area, San Francisco, CA
                 </div>
-              </div>
-              <hr />
+              </div> -->
+              <!-- <hr /> -->
             </div>
           </div>
         </div>
@@ -215,6 +215,11 @@ import Doctorrequest from "./doctorrequest.vue";
 export default {
   name: "doctorprofile",
   components: { Doctorrequest },
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+  },
 };
 </script>
 

@@ -26,6 +26,7 @@ export default {
   components: {},
   data() {
     return {
+      request_num: "",
       items: [
         {
           date: "2022-04-26",
@@ -55,8 +56,16 @@ export default {
     let self = this;
     await axios
       .get(
-        `http://127.0.0.1:8000/request/transaction/${this.$store.state.user.id}`
+        `http://127.0.0.1:8000/request/details/?user_id=${this.$store.state.user.id}`
       )
+      .then((e) => {
+        self.request_num = e.data.data;
+      });
+    await axios
+      // .get(
+      //   `http://127.0.0.1:8000/request/transaction/${this.$store.state.user.id}`
+      // )
+      .get(`http://127.0.0.1:8000/request/transaction/all/${self.request_num}`)
       .then((e) => {
         // when bankend sends the data in same fromat then undo the comment
         // self.items = e.data.data;

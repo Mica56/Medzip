@@ -27,7 +27,7 @@
               </div>
             </div>
           </div>
-          <div class="card mt-3">
+          <!-- <div class="card mt-3">
             <div class="card-body">
               <img
                 :src="user.prc_pic_url"
@@ -36,7 +36,7 @@
                 width="150"
               />
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-md-8">
           <div class="card mb-3">
@@ -83,12 +83,12 @@
                 <div class="col-sm-9 text-secondary">{{ user.pronouns }}</div>
               </div>
               <hr />
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-sm-3">
                   <h6 class="mb-0">License Number</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">{{ user.prc_num }}</div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

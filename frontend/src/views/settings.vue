@@ -43,6 +43,7 @@
 import General from "../components/Userspecific/accountgeneral.vue";
 import ChangePassword from "../components/Userspecific/accountchangepw.vue";
 import Info from "../components/Userspecific/accountinfo.vue";
+import axios from "axios";
 
 export default {
   name: "settings",
@@ -59,15 +60,28 @@ export default {
   },
   methods: {
     settings(selected) {
-      if (selected === "ChangePassword ") {
+      if (selected === "ChangePassword") {
+        let params = {
+          old_password: this.password.current,
+          new_password: this.password.new,
+        };
+        let headers = {
+          Authorization: `Token ${localStorage.getItem("Token")}`,
+        };
+        axios
+          .put("http://127.0.0.1:8000/account/changepassword", params, {
+            headers: headers,
+          })
+          .then((e) => {
+            console.log(e);
+            alert("Password change");
+          });
         // Call axios to change password
         // request payload  will be
         // this.password
 
         // if the api call is success then clear the password
-        //this.$store.commit("SET_PASSWORD",'empty')
-
-        console.log(this.password);
+        // logout the user
       }
     },
   },
