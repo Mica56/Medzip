@@ -61,7 +61,7 @@ export default {
   methods: {
     settings(selected) {
       if (selected === "ChangePassword") {
-        let params = {
+        let query_params = {
           old_password: this.password.current,
           new_password: this.password.new,
         };
@@ -69,7 +69,7 @@ export default {
           Authorization: `Token ${localStorage.getItem("Token")}`,
         };
         axios
-          .put("http://127.0.0.1:8000/account/changepassword", params, {
+          .put("http://127.0.0.1:8000/account/changepassword", query_params, {
             headers: headers,
           })
           .then((e) => {
