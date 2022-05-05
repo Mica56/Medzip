@@ -1,123 +1,180 @@
 <template>
-    <div>
-        <!-- <transition name="modal-fade"> -->
-        <div class="modal-mask" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-          <div class="modal-wrapper">
-            <div class="modal-container">
-<a href="/" type="button" class="btn-close" aria-label="Close" >
-</a>
-              <div class="modal-header" id="modalTitle">
-                <slot name="header">
-                  Sign Up Healthcare
-                </slot>
-              </div>
+  <div>
+    <!-- <transition name="modal-fade"> -->
+    <div
+      class="modal-mask"
+      role="dialog"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDescription"
+    >
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <a href="/" type="button" class="btn-close" aria-label="Close"> </a>
+          <div class="modal-header" id="modalTitle">
+            <slot name="header"> Sign Up Healthcare </slot>
+          </div>
 
-              <div class="modal-body" id="modalDescription">
-                <slot name="body">
-                  <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
+          <div class="modal-body" id="modalDescription">
+            <slot name="body">
+              <!-- <button class="btn btn-default btn-outlined" type="button" @click="showModal">Provider</button>
                   <button class="btn btn-default btn-outlined" type="button" @click="showModal">Patient</button> -->
-                  <!-- LoginForm -->
-                  <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> --> 
-                  <!-- <LoginForm></LoginForm> -->
-                        <form class="row g-3 needs-validation" novalidate>
-                       <div class="mb-3">
-                <input type="Company Name" class="form-control" id="exampleInputCompanyName1" placeholder="Company Name" required>
-               <div class="invalid-feedback">
-      Please provide a valid Company Name.
-    </div>
-     </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                <div class="invalid-feedback">
-      Please provide a valid email.
-    </div>
-    </div>
-            <div class="mb-3">
-                <input type="Representative Name" class="form-control" id="exampleInputName1" placeholder="Representative Name" required>
-               <div class="invalid-feedback">
-      Please provide a valid name.
-    </div>
-     </div>
-           <div class="mb-3">
-                <input type="Contact Number" class="form-control" id="exampleInputContact1" placeholder="Contact Number" required> 
-               <div class="invalid-feedback">
-      Please provide a valid Contact number.
-    </div>
-            </div>
-             <div class="mb-3">
-                <input type="Business Liscence Number" class="form-control" id="exampleInputBL1" placeholder="Business Liscence Number" required>
-                <div class="invalid-feedback">
-      Please provide a valid License Number.
-    </div>
-    </div>
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Attach Business Liscence</label>
-              <input class="form-control" type="file" id="formFile" required>
-              </div>
-                          <div class="mb-3">
-              <label for="formFile1" class="form-label">Attach Business proposal </label>
-              <input class="form-control" type="file" id="formFile1" required>
-              </div>
-                          <div class="mb-3">
-              <label for="formFile2" class="form-label">Attach Smart Contract</label>
-              <input class="form-control" type="file" id="formFile2" required>
-              </div>
-             <div class="mb-3">
-                <input type="Password" class="form-control" id="exampleInputPpassword" placeholder="Password" required>
-                <div class="invalid-feedback">
-      Please type a password.
-    </div>
-    </div>
+              <!-- LoginForm -->
+              <!-- <LoginForm v-show="isModalVisible" @close="closeModal"/> -->
+              <!-- <LoginForm></LoginForm> -->
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="mb-3">
+                  <input
+                    type="Company Name"
+                    class="form-control"
+                    id="exampleInputCompanyName1"
+                    placeholder="Company Name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid Company Name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Email address"
+                    required
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                  <div class="invalid-feedback">
+                    Please provide a valid email.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="Representative Name"
+                    class="form-control"
+                    placeholder="Representative Name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="Contact Number"
+                    class="form-control"
+                    placeholder="Contact Number"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid Contact number.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="Business Liscence Number"
+                    class="form-control"
+                    id="exampleInputBL1"
+                    placeholder="Business Liscence Number"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid License Number.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label"
+                    >Attach Business Liscence</label
+                  >
+                  <input class="form-control" type="file" required />
+                </div>
+                <div class="mb-3">
+                  <label for="formFile1" class="form-label"
+                    >Attach Business proposal
+                  </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFile1"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="formFile2" class="form-label"
+                    >Attach Smart Contract</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFile2"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="Password"
+                    class="form-control"
+                    placeholder="Password"
+                    required
+                  />
+                  <div class="invalid-feedback">Please type a password.</div>
+                </div>
 
-                 <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        I have validated the information above.
-      </label>
-      <div class="invalid-feedback">
-        You must validate before submitting.
-      </div>
-    </div>
-  </div>
- <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
-                                               <div id="register-link" class="text-right">
-                                <a href="/LoginModals" class="text-info">Log In here</a>
-                            </div>
-        </form>
-                </slot>
-              </div>
-
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button"  aria-label="Close modal">
-                    OK
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      I have validated the information above.
+                    </label>
+                    <div class="invalid-feedback">
+                      You must validate before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">
+                    Submit form
                   </button>
-                </slot>
-              </div>
-            </div>
+                </div>
+                <div id="register-link" class="text-right">
+                  <a href="/LoginModals" class="text-info">Log In here</a>
+                </div>
+              </form>
+            </slot>
+          </div>
+
+          <div class="modal-footer">
+            <slot name="footer">
+              default footer
+              <button class="modal-default-button" aria-label="Close modal">
+                OK
+              </button>
+            </slot>
           </div>
         </div>
-      <!-- </transition> -->
-      
+      </div>
     </div>
+    <!-- </transition> -->
+  </div>
 </template>
 
 <script>
 // import SUcompmod from './LoginForm.vue';
 
 export default {
-  name: 'SUcompmod',
+  name: "SUcompmod",
   components: {
     // SUcompmod
   },
   methods: {
     close() {
-      this.$emit('close');
+      this.$emit("close");
     },
     // showModal() {
     //     this.isModalVisible = true;
@@ -126,8 +183,7 @@ export default {
     //   this.isModalVisible = false;
     // }
   },
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>
