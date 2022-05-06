@@ -63,28 +63,17 @@ export default {
           };
     await axios
       .get(
-        `http://127.0.0.1:8000/request/details`, reqconfig
+        `https://jirroreo.pythonanywhere.com/request/details`, reqconfig
       )
       .then((e) => {
         self.request_num = e.data.data;
         console.log(self.request_num);
       });
-      //this is just a test to fetch request details
-          // let reqconfig = {
-          //   headers: { Authorization: `Token ${localStorage.getItem("Token")}` },
-          //   query_params: {
-          //     accid: this.id
-          //   }
-          // };
-          //  axios.get('http://127.0.0.1:8000/request/details', reqconfig)
-          // .then(response => {
-          //     console.log(response.data);
-          //   })
     await axios
       // .get(
       //   `http://127.0.0.1:8000/request/transaction/${this.$store.state.user.id}`
       // )
-      .get(`http://127.0.0.1:8000/request/transaction/all/${self.request_num}`)//and this
+      .get(`https://jirroreo.pythonanywhere.com/request/transaction/all/${self.request_num}`)//and this
       .then((e) => {
         // when bankend sends the data in same fromat then undo the comment
         // self.items = e.data.data;

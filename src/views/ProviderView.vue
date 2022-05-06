@@ -148,7 +148,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Provider User ID
+              {{ id }}
             </a>
             <ul
               class="dropdown-menu dropdown-menu-lg-end"
@@ -214,6 +214,11 @@ export default {
   name: "ProviderView",
   components: {
     Footer,
+  },
+  data (){
+    return {
+      id: "00" + `${this.$store.state.user.id}`,
+    };
   },
 };
 </script>

@@ -143,11 +143,11 @@ export default {
 
   methods: {
     checkCreds() {
-      //127.0.0.1:8000/authentication/
+      //https://jirroreo.pythonanywhere.com/admin/
       let self = this;
 
       axios
-        .post("http://127.0.0.1:8000/authentication/", {
+        .post("https://jirroreo.pythonanywhere.com/authentication/", {
           username: self.email,
           password: self.password,
         })
@@ -166,7 +166,7 @@ export default {
 
           try {
             axios
-              .get("http://127.0.0.1:8000/account/user", config)
+              .get("https://jirroreo.pythonanywhere.com/account/user", config)
               .then((response) => {
                 self.accountDetails = response.data;
                 self.id = response.data[0].id;

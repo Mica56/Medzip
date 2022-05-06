@@ -69,7 +69,7 @@ export default {
           Authorization: `Token ${localStorage.getItem("Token")}`,
         };
         axios
-          .put("http://127.0.0.1:8000/account/changepassword", query_params, {
+          .put("https://jirroreo.pythonanywhere.com/account/changepassword", query_params, {
             headers: headers,
           })
           .then((e) => {

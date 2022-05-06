@@ -182,6 +182,11 @@ const routes = [
         component: () =>
           import("../components/Userspecific/Pharmacists/rphpatients.vue"),
       },
+      // {
+      //   path: "/default",
+      //   name: "Default",
+      //   component: MainView,
+      // },
     ],
   },
   {

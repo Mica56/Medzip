@@ -2,7 +2,7 @@
   <div>
     <div
       class="modal fade"
-      id="SUPmodal"
+      id="SUMModals"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -11,9 +11,7 @@
         <div class="modal-content">
           <div class="modal-container">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                Providers Sign Up
-              </h5>
+              <h5 class="modal-title" id="exampleModalLabel">Member Sign Up</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -43,25 +41,22 @@
                   v-model="form.first_name"
                   type="Name"
                   class="form-control"
-                  placeholder="First Name"
+                  id="exampleInputfName1"
+                  placeholder="First name"
                   required
                 />
-                <div class="invalid-feedback">
-                  Please provide a valid first name.
-                </div>
+                <div class="invalid-feedback">Please provide a valid name.</div>
               </div>
               <div class="mb-3">
                 <input
                   v-model="form.last_name"
                   type="Name"
                   class="form-control"
-                  id="exampleInputName2"
-                  placeholder="Last Name"
+                  id="exampleInputlName1"
+                  placeholder="Last name"
                   required
                 />
-                <div class="invalid-feedback">
-                  Please provide a valid last name.
-                </div>
+                <div class="invalid-feedback">Please provide a valid name.</div>
               </div>
               <div class="mb-3">
                 <input
@@ -80,7 +75,7 @@
                   v-model="form.birthday"
                   type="Bday"
                   class="form-control"
-                  placeholder="Date of Birth MM/DD/YEAR"
+                  placeholder="Date of Birth ex. YYYY-MM-DD"
                   required
                 />
                 <div class="invalid-feedback">
@@ -115,7 +110,6 @@
                 </div>
                 <div class="invalid-feedback">Please provide a valid sex.</div>
               </div>
-
               <div class="mb-3">
                 <label for="Pronouns" class="form-label">Pronouns : </label>
                 <div class="form-check form-check-inline">
@@ -155,66 +149,24 @@
                   Please provide a valid pronoun/s.
                 </div>
               </div>
-
-              <div class="col-md-3">
-                <label for="validationCustom04" class="form-label"
-                  >Provider Type</label
-                >
-                <select
-                  v-model="form.provider_type"
-                  class="form-select"
-                  id="validationCustom04"
-                  required
-                >
-                  <option selected disabled value="">Choose...</option>
-                  <option>Doctor</option>
-                  <option>Pharmacist</option>
-                  <!-- <option>Nurse</option>
-                      <option>Medical Technologist</option>
-                      <option>Radio Technologist</option>
-                      <option>Dentists</option>
-                      <option>Others</option> -->
-                </select>
-                <div class="invalid-feedback">Please select provider type.</div>
-              </div>
-
-              <div class="mb-3">
-                <input
-                  v-model="form.prc_num"
-                  type="PRC License"
-                  class="form-control"
-                  id="exampleInputPRC1"
-                  placeholder="PRC Liscence Number"
-                  required
-                />
-                <div class="invalid-feedback">
-                  Please provide a valid License Number.
-                </div>
-              </div>
-              <!-- v-model="form.prc_pic_url" -->
-              <div class="mb-3">
-                <label for="formFile" class="form-label"
-                  >Attach clear picture with PRC ID</label
-                >
-                <input
-                  @change="previewFiles"
-                  class="form-control"
-                  type="file"
-                  required
-                />
-              </div>
-
               <div class="mb-3">
                 <input
                   v-model="form.password"
                   type="Password"
                   class="form-control"
+                  aria-describedby="PwHelp"
                   placeholder="Password"
                   required
                 />
+                <div id="PwHelp" class="form-text">
+                  Your password can’t be too similar to your other personal
+                  information.<br />
+                  Your password must contain at least 8 characters.<br />
+                  Your password can’t be a commonly used password.<br />
+                  Your password can’t be entirely numeric.
+                </div>
                 <div class="invalid-feedback">Please type a password.</div>
               </div>
-
               <div class="col-12">
                 <div class="form-check">
                   <input
@@ -232,7 +184,6 @@
                 </div>
               </div>
             </form>
-
             <div class="modal-footer">
               <div class="col-auto">
                 <button
@@ -267,7 +218,7 @@
 import axios from "axios";
 
 export default {
-  name: "SUPmodal",
+  name: "SUMModals",
   components: {
     // Signup3,
     // LoginForm
@@ -279,17 +230,15 @@ export default {
         last_name: "",
         email: "",
         password: "",
-        user_type: "Provider",
+        user_type: "Patient",
         contact_no: "",
         birthday: "",
         sex: "",
         pronouns: "",
         seed_phrase: "random string",
-        provider_type: "",
-        prc_num: "",
-        prc_pic_url: "",
       },
       isErrored: false,
+      catchederror: "",
     };
   },
 
@@ -300,30 +249,25 @@ export default {
     setPronouns(key) {
       this.form.pronouns = key;
     },
-    //have to save input #formfile to prc_pic_url as a URL
-    //this didn't work
-    previewFiles(event) {
-      console.log(event.target.files);
-      this.prc_pic_url = URL.createObjectURL(event.target.files[0]);
-      console.log(this.prc_pic_url);
-    },
     submitForm() {
-      console.log(this.form);
-      //undone the following comments once this.form prints out complete details
+      // console.log(this.form);
 
-      // try {
-      //   axios.post('http://127.0.0.1:8000/account/create', this.form,
-      //   { headers: { "Content-Type": "application/json" } })
-      //   .then(res => {
-      //       console.log("post request success" +  res);
-      //   }).catch(err => {
-      //     this.isErrored = true;
-      //     this.catchederror = err;
-      // })
-      // } catch (e) {
-      //   console.error(e);
-      //   console.log(this.catchederror);
-      // }
+      try {
+        axios
+          .post("https://jirroreo.pythonanywhere.com/account/create", this.form, {
+            headers: { "Content-Type": "application/json" },
+          })
+          .then((res) => {
+            console.log("post request success" + res);
+          })
+          .catch((err) => {
+            this.isErrored = true;
+            this.catchederror = err;
+          });
+      } catch (e) {
+        console.error(e);
+        console.log(this.catchederror);
+      }
     },
   },
 };

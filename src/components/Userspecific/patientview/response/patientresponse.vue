@@ -284,9 +284,15 @@ export default {
   components: {},
   async mounted() {
     let self = this;
+    let reqconfig = {
+            headers: { Authorization: `Token ${localStorage.getItem("Token")}` },
+            query_params: {
+              accid: `${this.$store.state.user.id}`
+            }
+          };
     await axios
       .get(
-        `http://127.0.0.1:8000/request/details?query_params=${this.$store.state.user.id}`
+        `https://jirroreo.pythonanywhere.com/request/details`, reqconfig
       )
       .then((e) => {
         console.log(e);
@@ -296,7 +302,7 @@ export default {
 
     await axios
       .get(
-        `http://127.0.0.1:8000/request/details/?user_id=${this.$store.state.user.id}`
+        `https://jirroreo.pythonanywhere.com/request/details`, reqconfig
       )
       .then((e) => {
         self.request_num = e.data.data;

@@ -26,7 +26,7 @@
               <li><a class="dropdown-item disabled " href="#">Find Providers</a></li>
              </ul>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Patient User ID
+              {{ id }}
             </a>
             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink" dropdown-menu-lg-end>
               <li><a class="dropdown-item"><router-link style="text-decoration: none; color: inherit;" to="/patientprof">Profile Information</router-link></a></li>
@@ -55,7 +55,11 @@ export default {
   components: {
     Footer, 
   },
-  
+  data (){
+    return {
+      id: "00" + `${this.$store.state.user.id}`,
+    };
+  },
 
 }
 </script>
