@@ -17,11 +17,11 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Date</th>
+      <th scope="col">Appointment No.</th>
       <th scope="col">Name</th>
       <th scope="col">Company</th>
       <th scope="col">Reason for consultation</th>
-      <th scope="col">Appointment</th>
+      <th scope="col">Appointment Date</th>
       <th scope="col">Sessions</th>
       <th scope="col">Requests</th>
       <th scope="col">Response</th>
@@ -34,10 +34,10 @@
       <th scope="row">1</th>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>severe asthma</td>
+      <td>2022-05-06</td>
+      <td>1</td>
+      <td>Medical Certificate</td>
       <td>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Pharmacistresponse">
            Accept
@@ -46,7 +46,7 @@
            Reject
          </button>
       </td>
-      <td>@mdo</td>
+      <td>Dr. Phil</td>
 
     </tr>
   </tbody>

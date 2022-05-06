@@ -18,21 +18,21 @@
               <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
-                <td>Otto</td>
+                <td>Accept</td>
                 <td>1</td>
                 <td>2022-05-06</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
-                <td>Thornton</td>
+                <td>Accept</td>
                 <td>2</td>
                 <td>2022-05-06</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
-                <td>the Bird</td>
+                <td>Reject</td>
                 <td>1</td>
                 <td>2022-05-06</td>
               </tr>
