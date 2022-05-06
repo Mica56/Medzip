@@ -93,7 +93,9 @@
         </div>
         <div class="modal-footer">
           <div class="col-auto">
-            <button type="accept" class="btn btn-primary mb-3">accept</button>
+            <button type="accept" class="btn btn-primary mb-3" data-bs-dismiss="modal" aria-label="Close">
+              Accept
+            </button>
           </div>
         </div>
       </div>
