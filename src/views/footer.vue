@@ -14,10 +14,18 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-white mb-3">Quick links</h5>
                     <ul class="list-unstyled text-muted">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="partners">Partners</a></li>
-                        <li><a href="providers">Providers</a></li>
+                        <li><a><router-link style="text-decoration: none; color: inherit" to="/home">
+                            Home
+                          </router-link></a></li>
+                        <li><a><router-link style="text-decoration: none; color: inherit" to="/about">
+                            About
+                          </router-link></a></li>
+                        <li><a><router-link style="text-decoration: none; color: inherit" to="/partners">
+                            Partner Company
+                          </router-link></a></li>
+                        <li><a><router-link style="text-decoration: none; color: inherit" to="/providers">
+                            Providers
+                          </router-link></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
