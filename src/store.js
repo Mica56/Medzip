@@ -68,13 +68,13 @@ const store = createStore({
       if (payload.appointment_date === null) {
         alert("Appoinment Date is required");
       } else {
-        axios.post("http://127.0.0.1:8000/request/create", data).then((e) => {
+        axios.post("https://jirroreo.pythonanywhere.com/request/create", data).then((e) => {
           console.log(e);
         });
       }
     },
     getAllUser({ commit }, payload) {
-      axios.get("http://127.0.0.1:8000/account/all").then((e) => {
+      axios.get("https://jirroreo.pythonanywhere.com/account/all").then((e) => {
         e.data.results.forEach((element) => {
           if (element.prc_pic_url !== null) {
             element.prc_pic_url = process.env.VUE_APP_URL + element.prc_pic_url;
