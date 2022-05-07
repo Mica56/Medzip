@@ -14,6 +14,7 @@ const store = createStore({
         new: "",
         newRepeat: "",
       },
+      allUser: [],
     };
   },
   mutations: {
@@ -37,6 +38,9 @@ const store = createStore({
         state.password.newRepeat = "";
       }
     },
+    SET_ALL_USER(state, payload) {
+      state.allUser = payload;
+    },
   },
   getters: {
     user(state) {
@@ -44,6 +48,15 @@ const store = createStore({
     },
     password(state) {
       return state.password;
+    },
+    allUser(state) {
+      return state.allUser;
+    },
+    doctors(state) {
+      return state.allUser.filter((x) => x.provider_type === "Doctor");
+    },
+    provider(state) {
+      return state.allUser.filter((x) => x.provider_type === "Provider");
     },
   },
   actions: {
@@ -59,6 +72,16 @@ const store = createStore({
           console.log(e);
         });
       }
+    },
+    getAllUser({ commit }, payload) {
+      axios.get("http://127.0.0.1:8000/account/all").then((e) => {
+        e.data.results.forEach((element) => {
+          if (element.prc_pic_url !== null) {
+            element.prc_pic_url = process.env.VUE_APP_URL + element.prc_pic_url;
+          }
+        });
+        commit("SET_ALL_USER", e.data.results);
+      });
     },
   },
 });
