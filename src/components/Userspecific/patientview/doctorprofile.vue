@@ -215,6 +215,9 @@ import Doctorrequest from "./doctorrequest.vue";
 export default {
   name: "doctorprofile",
   components: { Doctorrequest },
+  async mounted() {
+    await this.$store.dispatch("getAllUser");
+  },
   computed: {
     user() {
       return this.$store.getters.user;
