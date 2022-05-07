@@ -36,7 +36,7 @@
               <!-- Team Thumb-->
               <div class="advisor_thumb"><img src="../assets/PITSUR/7.png" alt="" width="300" height="300" >
                 <!-- Social Info-->
-                <div class="social-info"><a href="https://www.facebook.com/miruko56/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/Mimiso00"><i class="fa fa-twitter"></i></a><a href="https://github.com/Mica56"><i class="fa fa-github"></i></a></div>
+                <div class="social-info"><a href="https://www.facebook.com/miruko56/"><i class="fa fa-facebook"></i></a><a href="https://github.com/Mica56"><i class="fa fa-github"></i></a></div>
               </div>
               <!-- Team Details-->
               <div class="single_advisor_details_info">
