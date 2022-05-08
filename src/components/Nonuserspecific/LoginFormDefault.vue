@@ -170,7 +170,7 @@ export default {
               .then((response) => {
                 self.accountDetails = response.data;
                 self.id = response.data[0].id;
-                console.log(response.data[0]);
+                // console.log(response.data[0]);
                 // have to pass accountDetails to parent
 
                 self.$emit("AccountDetails", response.data[0]);
