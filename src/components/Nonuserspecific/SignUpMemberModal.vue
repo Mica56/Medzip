@@ -258,7 +258,7 @@ export default {
             headers: { "Content-Type": "application/json" },
           })
           .then((res) => {
-            console.log("post request success" + res);
+            console.log("post request success");
           })
           .catch((err) => {
             this.isErrored = true;

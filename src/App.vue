@@ -47,7 +47,7 @@ export default {
       this.loginType = value;
     },
     getAccountDetails(details) {
-      console.log(details);
+      // console.log(details);
     },
   },
   computed: {

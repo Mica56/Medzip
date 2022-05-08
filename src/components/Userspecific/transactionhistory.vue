@@ -67,7 +67,7 @@ export default {
       )
       .then((e) => {
         self.request_num = e.data.data;
-        console.log(self.request_num);
+        // console.log(self.request_num);
       });
     await axios
       // .get(

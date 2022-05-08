@@ -308,14 +308,14 @@ export default {
       // console.log(this.prc_pic_url);
     },
     submitForm() {
-      console.log(this.form);
+      // console.log(this.form);
       //undone the following comments once this.form prints out complete details
 
       try {
         axios.post('https://jirroreo.pythonanywhere.com/account/create', this.form,
         { headers: { "Content-Type": "application/json" } })
         .then(res => {
-            console.log("post request success" +  res);
+            console.log("post request success");
         }).catch(err => {
           this.isErrored = true;
           this.catchederror = err;
